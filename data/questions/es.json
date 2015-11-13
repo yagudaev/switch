@@ -1,0 +1,335 @@
+[
+  {
+    "text": "¿Desea información sobre determinados tipos de convenios para el sistema de salud?",
+    "filters": [
+      {
+        "id": "0_1",
+        "title": "Temas"
+      }
+    ],
+    "answers": [
+      {
+        "text": "Cómo se toman las decisiones (acerca de la atención)",
+        "section": {
+          "title": "Temas de interés"
+        },
+        "filterGroup": {
+          "id": "1_1",
+          "title": "Los acuerdos de gobernanza"
+        }
+      },
+      {
+        "text": "Cómo se paga la atención",
+        "section": {
+          "title": "Temas de interés"
+        },
+        "filterGroup": {
+          "id": "1_2",
+          "title": "Acuerdos financieros"
+        }
+      },
+      {
+        "text": "Cómo se organiza la atención",
+        "section": {
+          "title": "Temas de interés"
+        },
+        "filterGroup": {
+          "id": "1_3",
+          "title": "Planificación de las prestaciones"
+        }
+      },
+      {
+        "text": "Cómo se pueden implementar los cambios",
+        "section": {
+          "title": "Temas de interés"
+        },
+        "filterGroup": {
+          "id": "1_4",
+          "title": "Estrategias de implementación"
+        }
+      }
+    ]
+  },
+  {
+    "text": "¿Desea formular una determinada clase de pregunta? ",
+    "filters": [
+      {
+        "id": "0_21",
+        "title": "Tipo de documento"
+      }
+    ],
+    "answers": [
+      {
+        "text": "¿Qué enfoques se han evaluado respecto de sus ventajas y desventajas? (o ¿qué enfoque funciona?)",
+        "section": {
+          "title": "Tipo de documento"
+        },
+        "filterGroup": {
+          "id": "0_10",
+          "title": "revisiones sistemáticas de efectos y descripciones generales de revisiones"
+        },
+        "filters": [
+          {
+            "id": "10_2",
+            "title": "revisiones sistemáticas de efectos"
+          },
+          {
+            "id": "10_3",
+            "title": "descripciones generales de revisiones"
+          }
+        ]
+      },
+      {
+        "text": "¿Qué enfoques se han evaluado respecto de su rentabilidad? (o sea una rentable enfoque?)",
+        "section": {
+          "title": "Tipo de documento"
+        },
+        "filterGroup": {
+          "id": "0_10",
+          "title": "evaluaciones económicas y estudios de costos"
+        },
+        "filters": [
+          {
+            "id": "10_7",
+            "title": "evaluaciones económicas y estudios de costos"
+          }
+        ]
+      },
+      {
+        "text": "¿Qué más sabemos acerca de un enfoque o del problema que este aborda?",
+        "section": {
+          "title": "Tipo de documento"
+        },
+        "filterGroup": {
+          "id": "0_10",
+          "title": "revisiones sistemáticas que incluyen otras preguntas"
+        },
+        "filters": [
+          {
+            "id": "10_4",
+            "title": "revisiones sistemáticas que incluyen otras preguntas"
+          }
+        ]
+      },
+      {
+        "text": "¿Qué se ha probado en otros lugares y cuáles son las justificaciones documentadas? (y con qué impactos)?",
+        "section": {
+          "title": "Tipo de documento"
+        },
+        "filterGroup": {
+          "id": "0_10",
+          "title": "descripciones de la reforma de salud"
+        },
+        "filters": [
+          {
+            "id": "10_8",
+            "title": "descripciones de la reforma de salud"
+          }
+        ]
+      },
+      {
+        "text": "¿Qué se sabe acerca de un problema, las opciones y las consideraciones de implementación en un sistema de salud determinado?",
+        "section": {
+          "title": "Tipo de documento"
+        },
+        "filterGroup": {
+          "id": "0_10",
+          "title": "resúmenes de evidencia de la política"
+        },
+        "filters": [
+          {
+            "id": "10_1",
+            "title": "resúmenes de evidencia de la política"
+          }
+        ]
+      },
+      {
+        "text": "¿Cómo funciona un sistema de salud determinado?",
+        "section": {
+          "title": "Tipo de documento"
+        },
+        "filterGroup": {
+          "id": "0_10",
+          "title": "descripción del sistema de salud"
+        },
+        "filters": [
+          {
+            "id": "10_9",
+            "title": "descripción del sistema de salud"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "¿Está interesado en enfermedades, tecnologías, sectores o proveedores determinados?",
+    "filters": [
+      "0_2"
+    ],
+    "answers": [
+      {
+        "text": "Enfermedades (infecciosas, no transmisibles u otras)",
+        "section": {
+          "title": "Dominios"
+        },
+        "filterGroup": {
+          "id": "2_1",
+          "title": "Enfermedades"
+        }
+      },
+      {
+        "text": "Tecnologías (diagnóstico, vacunas, medicamentos, dispositivos, cirugías)",
+        "section": {
+          "title": "Dominios"
+        },
+        "filterGroup": {
+          "id": "2_2",
+          "title": "Tecnologías"
+        }
+      },
+      {
+        "text": "Sectores (atención domiciliaria, atención primaria, atención hospitalaria, rehabilitación, atención a largo plazo y salud pública)",
+        "section": {
+          "title": "Dominios"
+        },
+        "filterGroup": {
+          "id": "2_3",
+          "title": "Sectores"
+        }
+      },
+      {
+        "text": "Proveedores (médicos de cabecera, médicos especialistas, enfermeros, farmacéuticos, etc.)",
+        "section": {
+          "title": "Dominios"
+        },
+        "filterGroup": {
+          "id": "2_4",
+          "title": "Proveedores"
+        }
+      }
+    ]
+  },
+  {
+    "text": "¿Le interesan determinados países o PBMI?",
+    "answers": [
+      {
+        "text": "Centrado en países",
+        "section": {
+          "title": "Características del documento"
+        },
+        "filterGroup": {
+          "id": "0_6",
+          "title": "Centrado en países",
+          "type": "countries_countries"
+        }
+      },
+      {
+        "text": "Centrado en países de ingresos bajos y medios (LMIC)",
+        "section": {
+          "title": "Características del documento"
+        },
+        "filterGroup": {
+          "id": "0_9",
+          "title": "Centrado en LMIC"
+        }
+      }
+    ]
+  },
+  {
+    "regions": [
+      {
+        "name": "ontario",
+        "question": {
+          "filters": [
+            "0_5"
+          ],
+          "text": "¿Desea ver lo que organismos internacionales, como la OMS y el Banco Mundial, y lo que el gobierno de Ontario, otros gobiernos canadienses y organizaciones interesadas han escrito acerca del tema?",
+          "answers": [
+            {
+              "text": "Documentos de sistemas de salud de organizaciones intergubernamentales",
+              "section": {
+                "title": "Contenido gratuito"
+              },
+              "filterGroup": {
+                "id": "0_17",
+                "title": "Documentos intergubernamentales"
+              }
+            },
+            {
+              "text": "Documentos de sistemas de salud de Canadá",
+              "section": {
+                "title": "Contenido gratuito"
+              },
+              "filterGroup": {
+                "id": "0_18",
+                "title": "Documentos Canadienses"
+              }
+            },
+            {
+              "text": "Documentos del sistema de salud de Ontario",
+              "section": {
+                "title": "Contenido gratuito"
+              },
+              "filterGroup": {
+                "id": "0_19",
+                "title": "Documentos de Ontario"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "canada",
+        "question": {
+          "filters": [
+            "0_5"
+          ],
+          "text": "¿Desea ver lo que organismos internacionales, como la OMS y el Banco Mundial, y lo que gobiernos canadienses y organizaciones interesadas han escrito acerca del tema?",
+          "answers": [
+            {
+              "text": "Documentos de sistemas de salud de organizaciones intergubernamentales",
+              "section": {
+                "title": "Contenido gratuito"
+              },
+              "filterGroup": {
+                "id": "0_17",
+                "title": "Documentos intergubernamentales"
+              }
+            },
+            {
+              "text": "Documentos de sistemas de salud de Canadá",
+              "section": {
+                "title": "Contenido gratuito"
+              },
+              "filterGroup": {
+                "id": "0_18",
+                "title": "Documentos Canadienses"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "worldwide",
+        "question": {
+          "filters": [
+            "0_5"
+          ],
+          "text": "¿Desea ver lo que organismos internacionales, como la OMS y el Banco Mundial, han escrito acerca del tema?",
+          "answers": [
+            {
+              "text": "Documentos de sistemas de salud de organizaciones intergubernamentales",
+              "section": {
+                "title": "Contenido gratuito"
+              },
+              "filterGroup": {
+                "id": "0_17",
+                "title": "Documentos intergubernamentales"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

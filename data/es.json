@@ -1,0 +1,252 @@
+{
+  "site_name": "Health Systems Evidence",
+  "beta": "beta",
+  "terms_of_use": "Condiciones de uso",
+  "toggle_navigation": "Alternar navegación",
+  "select_all": "ES_Select all",
+  "select": "Seleccionar:",
+  "remove_selected": "ES_Remove selected",
+  "main_menu": {
+    "home": "Inicio",
+    "about": "¿Qué es HSE?",
+    "walkthrough": "Recorrido",
+    "guided_search": "Búsqueda guiada",
+    "select_language": "Seleccionar idioma",
+    "create_account": "Crear cuenta",
+    "login": "Iniciar sesión",
+    "logout": "Cerrar sesión"
+  },
+  "menus": {
+    "account": {
+      "title": "Mi cuenta",
+      "profile": "Perfil",
+      "saved_documents": "Documentos guardados",
+      "saved_searches": "Búsquedas guardadas",
+      "complementary_content": "Contenido gratuito"
+    },
+    "help": {
+      "title": "Ayuda",
+      "instructions": [
+        "Puede combinar los términos de su búsqueda utilizando los operadores booleanos Y, O y NO. Si utiliza Y, se asegurará de que los dos términos se incluyan en los resultados. Si utiliza O, se asegurará de que se incluya alguno de los términos. Si utiliza NO, se asegurará de que un término de búsqueda determinado no se incluya en los resultados.",
+        "",
+        "Por ejemplo, puede buscar cáncer O diabetes Y equipos NO enfermeros. ",
+        "",
+        "Este enfoque buscará documentos sobre equipos que proporcionan atención para pacientes con cáncer o diabetes, pero que no incluyen enfermeros."
+      ]
+    },
+    "signup": {
+      "title": "Crear cuenta",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "confirm_password": "Confirmar contraseña",
+      "i_accept": "Acepto los",
+      "terms": "Términos de uso",
+      "signup_button": "Crear cuenta",
+      "did_not_recieve": "¿No recibió un correo electrónico?",
+      "send_again": "Enviar nuevamente",
+      "confirmation_msg": "Se le ha enviado un correo electrónico de confirmación. Confirme su registro para activar su cuenta.",
+      "already_have_account": "¿Tiene ya una cuenta?",
+      "login": "Iniciar sesión"
+    },
+    "main": {
+      "title": "Menú"
+    },
+    "login": {
+      "title": "Iniciar sesión",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "login_button": "Iniciar sesión",
+      "forgot_password": "Esqueceu sua senha?"
+    },
+    "languages": {
+      "title": "Idiomas"
+    },
+    "filter_groups": {
+      "title": "Filtrar documento por…"
+    },
+    "filters": {
+      "title": "Seleccionar %{section_title}: %{filter_group_title}",
+      "any_filters": "Cualquier %{filter_title}"
+    },
+    "countries": {
+      "title": "Países",
+      "placeholder": "Escribir el nombre del país",
+      "no_countries_found": "No se encontraron países.",
+      "predicates": {
+        "target": "Destino del documento",
+        "at_least_one_study": "Al menos un estudio de"
+      }
+    },
+    "date_range": {
+      "title": "Intervalo de fechas",
+      "published": "Publicado",
+      "instructions": "(Incluya dos años de cuatro dígitos, como 2008 y 2009, o déjelos en blanco para incluir publicaciones de cualquier año)",
+      "placeholder": "AAAA"
+    }
+  },
+  "home_page": {
+    "intro": "ES_The world's most comprehensive, free access point for evidence to support policy makers, stakeholders and researches interested in how to strengthen or reform health systems or in how to get cost-effective programs, services and drugs to those who need them."
+  },
+  "articles_page": {
+    "back_to_results": "Volver a los resultados",
+    "back_to_newsletter": "ES_Back to newsletter",
+    "back_to_top_5": "ES_Back to top five",
+    "back_to_saved_documents": "ES_Back to saved documents",
+    "no_studies_conducted_in": "No disponible",
+    "no_full_text_report": "No hay un reporte en texto completo disponible",
+    "no_doi": "Aún no disponible",
+    "no_domains": "No disponible",
+    "no_topics": "No disponible",
+    "no_focus": "No disponible",
+    "no_lmic_focus": "No disponible",
+    "no_priority_areas": "No disponible",
+    "no_targets": "No disponible",
+    "no_themes": "No disponible",
+    "no_who_regions": "No disponible",
+    "no_scientific_abstract": "No disponible",
+    "no_summary_links": "No disponible",
+    "no_country_groupings": "No disponible",
+    "no_author_email": "No disponible",
+    "no_registry_record_links": "No existen entradas de registro disponibles",
+    "no_category": "No disponible",
+    "no_who_links": "No disponible",
+    "no_related_documents": "No disponible",
+    "no_last_year_literature_searched": "No disponible"
+  },
+  "search_page": {
+    "search_box": {
+      "view_results_count": "Ver %{results_count} resultados",
+      "tips": "Sugerencias para una búsqueda más eficaz",
+      "filters": "Filtros",
+      "placeholder": "Buscar…",
+      "save": "ES_Save search",
+      "save_and_subscribe": "ES_Save and subscribe",
+      "advanced_search": "ES_Advanced search"
+    },
+    "result_item": {
+      "year": "Año:",
+      "quality": "Calidad:",
+      "not_available": "No disponible"
+    },
+    "result_box": {
+      "results": "Resultados"
+    },
+    "result_list": {
+      "no_results": "No se encontraron resultados.",
+      "on_remove": "ES_Successfully removed %{documents_count} documents",
+      "on_email": "ES_An email has been sent to %{email} with %{documents_count} documents",
+      "on_save": "ES_Saved %{documents_count} documents",
+      "pending_search": "ES_Perform a search by entering a keyword above or selecting the appropriate filters from the list on the right."
+    },
+    "sort_order": {
+      "sorted_by": "Resultados ordenados por",
+      "relevance": "Mejor coincidencia",
+      "most_recent": "Más reciente",
+      "highest_quality": "ES_Highest quality"
+    },
+    "signup_prompt": {
+      "instructions": "Regístrese para ver más de 20 resultados, guardar documentos y búsquedas, enviar por correo electrónico y exportar documentos y suscribirse a alertas de correo electrónico."
+    }
+  },
+  "profile_page": {
+    "title": "Mi perfil",
+    "successfully_updated": "Perfil actualizado exitosamente",
+    "account_information": "Información de la cuenta",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "confirm_password": "Confirme la contraseña",
+    "personal_information": "Información personal",
+    "first_name": "Nombre",
+    "last_name": "Apellido",
+    "role": "Rol",
+    "country": "País",
+    "language": "Idioma",
+    "cannot_load_user_profile": "No fue posible cargar los datos. Verifique su conexión de Internet.",
+    "short_cannot_load_user_profile": "No puede cargarse la información del perfil de usuario",
+    "edit": "Editar",
+    "cancel": "Cancelar"
+  },
+  "complementary_content_page": {
+    "title": "CONTENIDO GRATUITO",
+    "description": "Permitir la visualización del contenido complementario",
+    "complementary_content_2": {
+      "title": "DOCUMENTOS DE SISTEMAS DE SALUD DE CANADÁ",
+      "description": "Para todo aquel que no indique que su país es Canadá o inicie su sesión desde una dirección IP con origen en Canadá"
+    },
+    "complementary_content_3": {
+      "title": "DOCUMENTOS DE SISTEMAS DE SALUD DE ONTARIO",
+      "description": "Para todo aquel que inicie sesión desde una dirección IP con origen en Ontario"
+    }
+  },
+  "top_5_page": {
+    "title_short": "ES_Top five",
+    "title": {
+      "all": "Cinco documentos de 1 página de mayor acceso por los usuarios",
+      "policy_makers": "Cinco documentos de 1 página de mayor acceso por los formuladores de políticas"
+    }
+  },
+  "forgot_password_page": {
+    "title": "Olvidó su contraseña",
+    "email": "Correo electrónico",
+    "instructions": "Ingrese el correo electrónico que utiliza para iniciar sesión y le enviaremos un enlace para restablecer su contraseña",
+    "submit": "Enviar correo electrónico",
+    "on_success": "Se le ha enviado un mensaje de correo electrónico con una clave para restablecer su contraseña"
+  },
+  "reset_password_page": {
+    "title": "Restablecer contraseña",
+    "password": "Contraseña",
+    "confirm_password": "Confirme la contraseña",
+    "submit": "Restablecer contraseña",
+    "password_retained": "ES_Thank you. Your original password has been retained."
+  },
+  "newsletter_page": {
+    "title": "Boletín informativo"
+  },
+  "unsubscribe_page": {
+    "title": "Cancelar suscripción",
+    "confirmation_msg": "ES_Please click the button below to confirm that you would like to unsubscribe from the Evidence Service",
+    "unsubscribe": "Cancelar suscripción",
+    "success": "ES_Successfully unsubscribed from newsletter"
+  },
+  "saved_search_page": {
+    "title": "ES_Saved searches",
+    "subscribed_only": "ES_Show only subscribed searches",
+    "instructions": "ES_You can subscribe up to one saved search and one curated search",
+    "subscribe": "ES_Subscribe to search",
+    "dialog": {
+      "message": "ES_Creating a new subscribed search will unsubscribe you from your current one. Are you sure you want to do this?",
+      "cancel": "ES_Cancel",
+      "confirm": "ES_New search"
+    },
+    "on_remove": "CN_Successfully removed %{searches_count} searches"
+  },
+  "saved_articles_page": {
+    "title": "ES_Saved documents",
+    "warning": "ES_Documents you saved will be kept on this page for up to 6 hours.",
+    "instructions": "ES_You can email or export those documents.",
+    "email": "Correo electrónico",
+    "export": "ES_Export"
+  },
+  "quota_exceeded_error_page": {
+    "title": "ES_Limit exceeded",
+    "body": [
+      "ES_Limit exceeded. You have made too many requests in a short period of time than we allow.",
+      "",
+      "ES_We limit the number of allowed requests to protect Health Systems Evidence from inappropriate use.",
+      "",
+      "ES_If you feel this is an error on our part, please email [michael.yagudaev@func-i.com](michael.yagudaev@func-i.com)"
+    ]
+  },
+  "errors": {
+    "no_connection": "No fue posible cargar los datos. Verifique su conexión de Internet.",
+    "cant_be_blank": "no puede estar en blanco",
+    "must_accept_terms": "debe aceptar los términos y condiciones",
+    "already_exists": "ya existe",
+    "invalid_email": "correo electrónico inválido",
+    "too_short": "es demasiado corto, debe contener un mínimo de 8 caracteres",
+    "invalid_login": "Nombre de usuario o contraseña incorrectos",
+    "passwords_must_match": "Las contraseñas deben coincidir",
+    "invalid": "Inválido",
+    "signup_to_increase_limit": "ES_You have exceeded our record limit. Please log in (or create an account for free) if you wish to access more documents."
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "site_name": "Health Systems Evidence",
+  "beta": "beta",
+  "terms_of_use": "Termos de uso",
+  "toggle_navigation": "Alternar navegação",
+  "select_all": "PT_Select all",
+  "select": "Selecionar:",
+  "remove_selected": "PT_Remove selected",
+  "main_menu": {
+    "home": "Início",
+    "about": "Sobre o HSE",
+    "walkthrough": "Guia passo a passo",
+    "guided_search": "Pesquisa orientada",
+    "select_language": "Selecionar idioma",
+    "create_account": "Criar conta",
+    "login": "Iniciar sessão",
+    "logout": "Fazer logout"
+  },
+  "menus": {
+    "account": {
+      "title": "Minha conta",
+      "profile": "Perfil",
+      "saved_documents": "Documentos salvos",
+      "saved_searches": "Pesquisas salvas",
+      "complementary_content": "Complementaridade de conteúdos"
+    },
+    "help": {
+      "title": "Ajuda",
+      "instructions": [
+        "Pode combinar seus termos de pesquisa usando os operadores booleanos E, OU e NÃO. Usar E permite que ambos os termos sejam incluídos em seus resultados. Usar OU permite a inclusão de um dos termos. Usar NÃO permite que um dado termo de pesquisa não seja incluído em seus resultados.",
+        "",
+        "Por exemplo, pode pesquisar por câncer OU diabetes E equipes NÃO enfermeiros.",
+        "",
+        "Esta abordagem pesquisará documentos com foco em equipes que fornecem cuidados para pacientes oncológicos ou diabéticos, mas que não envolvem enfermeiros."
+      ]
+    },
+    "signup": {
+      "title": "Criar conta",
+      "email": "E-mail",
+      "password": "Senha",
+      "confirm_password": "Confirmar senha",
+      "i_accept": "Aceito os",
+      "terms": "Termos de uso",
+      "signup_button": "Criar conta",
+      "did_not_recieve": "Não recebeu um e-mail?",
+      "send_again": "Enviar novamente",
+      "confirmation_msg": "Foi-lhe enviado um e-mail de confirmação. Confirme o seu registro para ativar a sua conta!",
+      "already_have_account": "Já possui uma conta?",
+      "login": "Iniciar sessão"
+    },
+    "main": {
+      "title": "Menu"
+    },
+    "login": {
+      "title": "Iniciar sessão",
+      "email": "E-mail",
+      "password": "Senha",
+      "login_button": "Iniciar sessão",
+      "forgot_password": "Esqueceu sua senha?"
+    },
+    "languages": {
+      "title": "Idiomas"
+    },
+    "filter_groups": {
+      "title": "Filtrar documento por..."
+    },
+    "filters": {
+      "title": "Selecionar %{section_title}: %{filter_group_title}",
+      "any_filters": "Qualquer %{filter_title}"
+    },
+    "countries": {
+      "title": "Países",
+      "placeholder": "Digite o nome do país",
+      "no_countries_found": "Nenhum país encontrado.",
+      "predicates": {
+        "target": "Destino do documento",
+        "at_least_one_study": "Pelo menos um estudo de está"
+      }
+    },
+    "date_range": {
+      "title": "Intervalo de datas",
+      "published": "Publicado",
+      "instructions": "(Inclua dois anos de quatro dígitos, como 2008 e 2009, ou deixe em branco para incluir publicações de qualquer ano)",
+      "placeholder": "AAAA"
+    }
+  },
+  "home_page": {
+    "intro": "PT_The world's most comprehensive, free access point for evidence to support policy makers, stakeholders and researches interested in how to strengthen or reform health systems or in how to get cost-effective programs, services and drugs to those who need them."
+  },
+  "articles_page": {
+    "back_to_results": "Voltar aos resultados",
+    "back_to_newsletter": "PT_Back to newsletter",
+    "back_to_top_5": "PT_Back to top five",
+    "back_to_saved_documents": "PT_Back to saved documents",
+    "no_studies_conducted_in": "Não disponível",
+    "no_full_text_report": "Relatório completo gratuito não disponível",
+    "no_doi": "Ainda não disponível",
+    "no_domains": "Não disponível",
+    "no_topics": "Não disponível",
+    "no_focus": "Não disponível",
+    "no_lmic_focus": "Não disponível",
+    "no_priority_areas": "Não disponível",
+    "no_targets": "Não disponível",
+    "no_themes": "Não disponível",
+    "no_who_regions": "Não disponível",
+    "no_scientific_abstract": "Não disponível",
+    "no_summary_links": "Não disponível",
+    "no_country_groupings": "Não disponível",
+    "no_author_email": "Não disponível",
+    "no_registry_record_links": "Registro de cadastro não disponível",
+    "no_category": "Não disponível",
+    "no_who_links": "Não disponível",
+    "no_related_documents": "Não disponível",
+    "no_last_year_literature_searched": "Não disponível"
+  },
+  "search_page": {
+    "search_box": {
+      "view_results_count": "Exibir %{results_count} resultados",
+      "tips": "Dicas para uma pesquisa mais eficaz",
+      "filters": "Filtros",
+      "placeholder": "Pesquisar...",
+      "save": "PT_Save search",
+      "save_and_subscribe": "PT_Save and subscribe",
+      "advanced_search": "PT_Advanced search"
+    },
+    "result_item": {
+      "year": "Ano:",
+      "quality": "Qualidade:",
+      "not_available": "Não disponível"
+    },
+    "result_box": {
+      "results": "Resultados"
+    },
+    "result_list": {
+      "no_results": "Nenhum resultado encontrado.",
+      "on_remove": "PT_Successfully removed %{documents_count} documents",
+      "on_email": "PT_An email has been sent to %{email} with %{documents_count} documents",
+      "on_save": "PT_Saved %{documents_count} documents",
+      "pending_search": "PT_Perform a search by entering a keyword above or selecting the appropriate filters"
+    },
+    "sort_order": {
+      "sorted_by": "Resultados classificados por",
+      "relevance": "Melhor correspondência",
+      "most_recent": "Mais recente",
+      "highest_quality": "PT_Highest quality"
+    },
+    "signup_prompt": {
+      "instructions": "Inscreva-se para exibir mais de 20 resultados, salvar documentos e pesquisas, enviar e-mails com documentos e exportá-los e para assinar alertas por e-mail"
+    }
+  },
+  "profile_page": {
+    "title": "Meu perfil",
+    "successfully_updated": "Perfil atualizado com sucesso",
+    "account_information": "Informações da conta",
+    "email": "E-mail",
+    "password": "Senha",
+    "confirm_password": "Confirmar senha",
+    "personal_information": "Informações pessoais",
+    "first_name": "Nome",
+    "last_name": "Sobrenome",
+    "role": "Função",
+    "country": "País",
+    "language": "Idioma",
+    "cannot_load_user_profile": "Opa, não foi possível carregar dados. Verifique sua conexão com a Internet.",
+    "short_cannot_load_user_profile": "Não foi possível carregar as informações do perfil do usuário",
+    "edit": "Editar",
+    "cancel": "Cancelar"
+  },
+  "complementary_content_page": {
+    "title": "COMPLEMENTARIDADE DE CONTEÚDOS",
+    "description": "Permitir visualização de conteúdo complementar",
+    "complementary_content_2": {
+      "title": "DOCUMENTOS DOS SISTEMAS DE SAÚDE DO CANADÁ",
+      "description": "Para aqueles que pertencem a um país que não seja Canadá ou que fazem login usando um endereço IP localizado no Canadá"
+    },
+    "complementary_content_3": {
+      "title": "DOCUMENTOS DE SISTEMAS DE SAÚDE DO ONTÁRIO",
+      "description": "Para aqueles que fazem login usando um endereço IP localizado em Ontário"
+    }
+  },
+  "top_5_page": {
+    "title_short": "PT_Top five",
+    "title": {
+      "all": "Cinco principais resumos de 1 página acessados por todos os usuários",
+      "policy_makers": "Cinco principais resumos de 1 página acessados por formuladores de políticas"
+    }
+  },
+  "forgot_password_page": {
+    "title": "Esqueci a senha",
+    "email": "E-mail",
+    "instructions": "Insira o e-mail que usa para iniciar sessão e lhe enviaremos um link para redefinir sua senha",
+    "submit": "Enviar e-mail",
+    "on_success": "Um token de redefinição de senha foi enviado para seu e-mail"
+  },
+  "reset_password_page": {
+    "title": "Redefinir senha",
+    "password": "Senha",
+    "confirm_password": "Confirmar senha",
+    "submit": "Redefinir senha",
+    "password_retained": "PT_Thank you. Your original password has been retained."
+  },
+  "newsletter_page": {
+    "title": "Boletim informativo"
+  },
+  "unsubscribe_page": {
+    "title": "Cancelar assinatura",
+    "confirmation_msg": "PT_Please click the button below to confirm that you would like to unsubscribe from the Evidence Service",
+    "unsubscribe": "Cancelar assinatura",
+    "success": "PT_Successfully unsubscribed from newsletter"
+  },
+  "saved_search_page": {
+    "title": "PT_Saved searches",
+    "subscribed_only": "PT_Show only subscribed searches",
+    "instructions": "PT_You can subscribe up to one saved search and one curated search",
+    "subscribe": "PT_Subscribe to search",
+    "dialog": {
+      "message": "PT_Creating a new subscribed search will unsubscribe you from your current one. Are you sure you want to do this?",
+      "cancel": "PT_Cancel",
+      "confirm": "PT_New search"
+    },
+    "on_remove": "PT_Successfully removed %{searches_count} searches"
+  },
+  "saved_articles_page": {
+    "title": "PT_Saved documents",
+    "warning": "PT_Documents you saved will be kept on this page for up to 6 hours.",
+    "instructions": "PT_You can email or export those documents.",
+    "email": "E-mail",
+    "export": "FR_Export"
+  },
+  "quota_exceeded_error_page": {
+    "title": "PT_Limit exceeded",
+    "body": [
+      "PT_Limit exceeded. You have made too many requests in a short period of time than we allow.",
+      "",
+      "PT_We limit the number of allowed requests to protect Health Systems Evidence from inappropriate use.",
+      "",
+      "PT_If you feel this is an error on our part, please email [michael.yagudaev@func-i.com](michael.yagudaev@func-i.com)"
+    ]
+  },
+  "errors": {
+    "no_connection": "Opa, não foi possível carregar dados. Verifique sua conexão com a Internet.",
+    "cant_be_blank": "não pode ficar em branco",
+    "must_accept_terms": "você deve aceitar os termos e condições",
+    "already_exists": "já existe",
+    "invalid_email": "o e-mail não é válido",
+    "too_short": "é muito curto, debe conter pelo menos 8 caracteres",
+    "invalid_login": "Nome de usuário e senha incorretos",
+    "passwords_must_match": "As senhas devem coincidir",
+    "invalid": "Não é válido",
+    "signup_to_increase_limit": "PT_You have exceeded our record limit. Please log in (or create an account for free) if you wish to access more documents."
+  }
+}

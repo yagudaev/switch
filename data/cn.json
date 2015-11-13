@@ -1,0 +1,252 @@
+{
+  "site_name": "Health Systems Evidence",
+  "beta": "测试版",
+  "terms_of_use": "使用条款",
+  "toggle_navigation": "切换导航",
+  "select_all": "CN_Select all",
+  "select": "选择：",
+  "remove_selected": "CN_Remove selected",
+  "main_menu": {
+    "home": "主页",
+    "about": "关于卫生系统证据（HSE)",
+    "walkthrough": "浏览",
+    "guided_search": "引导式检索",
+    "select_language": "选择语言",
+    "create_account": "注册",
+    "login": "登陆",
+    "logout": "退出"
+  },
+  "menus": {
+    "account": {
+      "title": "我的账户",
+      "profile": "我的资料",
+      "saved_documents": "已保存的文件",
+      "saved_searches": "保存检索",
+      "complementary_content": "补充内容"
+    },
+    "help": {
+      "title": "帮助",
+      "instructions": [
+        "您可以用布尔逻辑运算符AND、OR和NOT组配检索词。应用AND可确保两个检索词都在结果中出现；应用OR可确保结果中至少包括两个检索词中的一个；应用NOT可确保结果中没有给定的检索词。",
+        "",
+        "例如，您可以检索“癌症 OR 糖尿病 AND 团队 NOT 护士”。",
+        "",
+        "这一方法可检索出关注为癌症或糖尿病患者提供护理的团队（但不包括护士）的文件。"
+      ]
+    },
+    "signup": {
+      "title": "注册",
+      "email": "电子邮件",
+      "password": "密码",
+      "confirm_password": "确认密码",
+      "i_accept": "我接受",
+      "terms": "使用条款",
+      "signup_button": "注册",
+      "did_not_recieve": "还没收到邮件？",
+      "send_again": "再次发送",
+      "confirmation_msg": "确认邮件已经发送至您的邮箱，请确认注册以激活您的账号！",
+      "already_have_account": "已经有一个账号？",
+      "login": "登陆"
+    },
+    "main": {
+      "title": "菜单"
+    },
+    "login": {
+      "title": "登陆",
+      "email": "电子邮件",
+      "password": "密码",
+      "login_button": "登陆",
+      "forgot_password": "忘记密码？"
+    },
+    "languages": {
+      "title": "语言"
+    },
+    "filter_groups": {
+      "title": "按……筛选文件"
+    },
+    "filters": {
+      "title": "选择 %{section_title}: %{filter_group_title}",
+      "any_filters": "任何 %{filter_title}"
+    },
+    "countries": {
+      "title": "国家",
+      "placeholder": "输入国家名称",
+      "no_countries_found": "未找到相应国家。",
+      "predicates": {
+        "target": "文件目标",
+        "at_least_one_study": "至少一个研究来自"
+      }
+    },
+    "date_range": {
+      "title": "日期范围",
+      "published": "已发表",
+      "instructions": "（请填写两个四位数年份，如2008和2009，或不填，即不限制纳入研究的发表时间）",
+      "placeholder": "YYYY"
+    }
+  },
+  "home_page": {
+    "intro": "CN_The world's most comprehensive, free access point for evidence to support policy makers, stakeholders and researches interested in how to strengthen or reform health systems or in how to get cost-effective programs, services and drugs to those who need them."
+  },
+  "articles_page": {
+    "back_to_results": "返回结果",
+    "back_to_newsletter": "CN_Back to newsletter",
+    "back_to_top_5": "CN_Back to top five",
+    "back_to_saved_documents": "CN_Back to saved documents",
+    "no_studies_conducted_in": "无法获取",
+    "no_full_text_report": "无免费全文",
+    "no_doi": "尚不能获取",
+    "no_domains": "无法获取",
+    "no_topics": "无法获取",
+    "no_focus": "无法获取",
+    "no_lmic_focus": "无法获取",
+    "no_priority_areas": "无法获取",
+    "no_targets": "无法获取",
+    "no_themes": "无法获取",
+    "no_who_regions": "无法获取",
+    "no_scientific_abstract": "无法获取",
+    "no_summary_links": "无法获取",
+    "no_country_groupings": "无法获取",
+    "no_author_email": "无法获取",
+    "no_registry_record_links": "没有注册记录",
+    "no_category": "无法获取",
+    "no_who_links": "无法获取",
+    "no_related_documents": "无法获取",
+    "no_last_year_literature_searched": "无法获取"
+  },
+  "search_page": {
+    "search_box": {
+      "view_results_count": "查看 %{results_count} 结果",
+      "tips": "如何实现更有效检索",
+      "filters": "限定项",
+      "placeholder": "检索……",
+      "save": "CN_Save search",
+      "save_and_subscribe": "CN_Save and subscribe",
+      "advanced_search": "CN_Advanced search"
+    },
+    "result_item": {
+      "year": "年份：",
+      "quality": "质量：",
+      "not_available": "无法获取"
+    },
+    "result_box": {
+      "results": "结果"
+    },
+    "result_list": {
+      "no_results": "未找到相应结果。",
+      "on_remove": "CN_Successfully removed %{documents_count} documents",
+      "on_email": "CN_An email was sent to %{email} with %{documents_count} documents",
+      "on_save": "CN_Saved %{documents_count} documents",
+      "pending_search": "CN_Perform a search by entering a keyword above or selecting the appropriate filters from the list on the right."
+    },
+    "sort_order": {
+      "sorted_by": "按……排序的结果",
+      "relevance": "最相关",
+      "most_recent": "最近发表",
+      "highest_quality": "CN_Highest quality"
+    },
+    "signup_prompt": {
+      "instructions": "注册以查看20条以后的结果，保存文档和检索，发送电子邮件和导出文件，以及订阅邮件提醒"
+    }
+  },
+  "profile_page": {
+    "title": "我的资料",
+    "successfully_updated": "成功更新资料",
+    "account_information": "账户信息",
+    "email": "电子邮件",
+    "password": "密码",
+    "confirm_password": "确认密码",
+    "personal_information": "个人信息",
+    "first_name": "名",
+    "last_name": "姓",
+    "role": "职业",
+    "country": "国家",
+    "language": "语言",
+    "cannot_load_user_profile": "啊，无法加载数据，请检查您的网络链接。",
+    "short_cannot_load_user_profile": "不能加载用户信息",
+    "edit": "编辑",
+    "cancel": "取消"
+  },
+  "complementary_content_page": {
+    "title": "补充内容",
+    "description": "允许查看补充内容",
+    "complementary_content_2": {
+      "title": "加拿大卫生系统文件",
+      "description": "对于那些国家不是加拿大或者没有使用加拿大IP地址登录的人"
+    },
+    "complementary_content_3": {
+      "title": "安大略省的卫生系统文件",
+      "description": "对于那些使用安大略省IP地址登录的人"
+    }
+  },
+  "top_5_page": {
+    "title_short": "CN_Top five",
+    "title": {
+      "all": "用户访问最多的五个页面",
+      "policy_makers": "决策者访问最多的五个页面"
+    }
+  },
+  "forgot_password_page": {
+    "title": "忘记密码",
+    "email": "电子邮件",
+    "instructions": "请在下方输入您用于登陆的邮箱，我们将给您发送链接以重置密码",
+    "submit": "发送邮件",
+    "on_success": "密码重置提醒已经发送到您的邮箱"
+  },
+  "reset_password_page": {
+    "title": "重置密码",
+    "password": "密码",
+    "confirm_password": "确认密码",
+    "submit": "重置密码",
+    "password_retained": "CN_Thank you. Your original password has been retained."
+  },
+  "newsletter_page": {
+    "title": "新闻简报"
+  },
+  "unsubscribe_page": {
+    "title": "取消订阅",
+    "confirmation_msg": "CN_Please click the button below to confirm that you would like to unsubscribe from the Evidence Service",
+    "unsubscribe": "取消订阅",
+    "success": "CN_Successfully unsubscribed from newsletter"
+  },
+  "saved_search_page": {
+    "title": "CN_Saved searches",
+    "subscribed_only": "CN_Show only subscribed searches",
+    "instructions": "CN_You can subscribe up to one saved search and one curated search",
+    "subscribe": "CN_Subscribe to search",
+    "dialog": {
+      "message": "CN_Creating a new subscribed search will unsubscribe you from your current one. Are you sure you want to do this?",
+      "cancel": "CN_Cancel",
+      "confirm": "CN_New search"
+    },
+    "on_remove": "CN_Successfully removed %{searches_count} searches"
+  },
+  "saved_articles_page": {
+    "title": "CN_Saved documents",
+    "warning": "CN_Documents you saved will be kept on this page for up to 6 hours.",
+    "instructions": "CN_You can email or export those documents.",
+    "email": "电子邮件",
+    "export": "CN_Export"
+  },
+  "quota_exceeded_error_page": {
+    "title": "CN_Limit exceeded",
+    "body": [
+      "CN_Limit exceeded. You have made too many requests in a short period of time than we allow.",
+      "",
+      "CN_We limit the number of allowed requests to protect Health Systems Evidence from inappropriate use.",
+      "",
+      "CN_If you feel this is an error on our part, please email [michael.yagudaev@func-i.com](michael.yagudaev@func-i.com)"
+    ]
+  },
+  "errors": {
+    "no_connection": "啊，无法加载数据，请检查您的网络链接。",
+    "cant_be_blank": "不能为空！",
+    "must_accept_terms": "你必须接受这些条款和条件！",
+    "already_exists": "已经存在",
+    "invalid_email": "无效邮箱",
+    "too_short": "太短了，必须至少8个字符",
+    "invalid_login": "用户名或密码错误",
+    "passwords_must_match": "密码必须匹配",
+    "invalid": "无效",
+    "signup_to_increase_limit": "CN_You have exceeded our record limit. Please log in (or create an account for free) if you wish to access more documents."
+  }
+}

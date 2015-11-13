@@ -1,0 +1,252 @@
+{
+  "site_name": "Health Systems Evidence",
+  "beta": "beta",
+  "terms_of_use": "Terms of use",
+  "toggle_navigation": "Toggle navigation",
+  "select_all": "Select all",
+  "select": "Select:",
+  "remove_selected": "Remove selected",
+  "main_menu": {
+    "home": "Home",
+    "about": "About HSE",
+    "walkthrough": "Walk through",
+    "guided_search": "Guided search",
+    "select_language": "Select language",
+    "create_account": "Create account",
+    "login": "Log in",
+    "logout": "Logout"
+  },
+  "menus": {
+    "account": {
+      "title": "My account",
+      "profile": "Profile",
+      "saved_documents": "Saved documents",
+      "saved_searches": "Saved searches",
+      "complementary_content": "Complementary content"
+    },
+    "help": {
+      "title": "Help",
+      "instructions": [
+        "You can combine your search terms using the Boolean operators AND, OR and NOT. Using AND will ensure both terms are included in your results. Using OR will ensure either of the terms are included. Using NOT will ensure that a given search term isn't included in your results.",
+        "",
+        "For example, you can search for cancer OR diabetes AND teams NOT nurses.",
+        "",
+        "This approach will search for documents that focus on teams that provide care for cancer or diabetes patients, but that don't involve nurses."
+      ]
+    },
+    "signup": {
+      "title": "Create account",
+      "email": "Email",
+      "password": "Password",
+      "confirm_password": "Confirm password",
+      "i_accept": "I accept the",
+      "terms": "Terms of use",
+      "signup_button": "Create account",
+      "did_not_recieve": "Didn't receive an email?",
+      "send_again": "Send again",
+      "confirmation_msg": "A confirmation email has been sent to you. Please confirm your registration to activate your account!",
+      "already_have_account": "Already have an account?",
+      "login": "Log in"
+    },
+    "main": {
+      "title": "Menu"
+    },
+    "login": {
+      "title": "Log in",
+      "email": "Email",
+      "password": "Password",
+      "login_button": "Log in",
+      "forgot_password": "Forgot your password?"
+    },
+    "languages": {
+      "title": "Languages"
+    },
+    "filter_groups": {
+      "title": "Filter documents by..."
+    },
+    "filters": {
+      "title": "Select %{section_title}: %{filter_group_title}",
+      "any_filters": "Any %{filter_title}"
+    },
+    "countries": {
+      "title": "Countries",
+      "placeholder": "Type country name",
+      "no_countries_found": "No countries found.",
+      "predicates": {
+        "target": "Target of document",
+        "at_least_one_study": "At least one study from country"
+      }
+    },
+    "date_range": {
+      "title": "Date Range",
+      "published": "Published",
+      "instructions": "(Please include two four-digit years, such as 2008 and 2009, or leave them blank to include publications from any year)",
+      "placeholder": "YYYY"
+    }
+  },
+  "home_page": {
+    "intro": "The world's most comprehensive, free access point for evidence to support policy makers, stakeholders and researchers interested in how to strengthen or reform health systems or in how to get cost-effective programs, services and drugs to those who need them."
+  },
+  "articles_page": {
+    "back_to_results": "Back to results",
+    "back_to_newsletter": "Back to newsletter",
+    "back_to_top_5": "Back to top five",
+    "back_to_saved_documents": "Back to saved documents",
+    "no_studies_conducted_in": "Not available",
+    "no_full_text_report": "No free full-text search report available",
+    "no_doi": "Not yet available",
+    "no_domains": "Not available",
+    "no_topics": "Not available",
+    "no_focus": "Not available",
+    "no_lmic_focus": "Not available",
+    "no_priority_areas": "Not available",
+    "no_targets": "Not available",
+    "no_themes": "Not available",
+    "no_who_regions": "Not available",
+    "no_scientific_abstract": "Not available",
+    "no_summary_links": "Not available",
+    "no_country_groupings": "Not available",
+    "no_author_email": "Not available",
+    "no_registry_record_links": "No registry record available",
+    "no_category": "Not available",
+    "no_who_links": "Not available",
+    "no_related_documents": "Not available",
+    "no_last_year_literature_searched": "Not available"
+  },
+  "search_page": {
+    "search_box": {
+      "view_results_count": "View %{results_count} results",
+      "tips": "Search tips",
+      "filters": "Filters",
+      "placeholder": "Search...",
+      "save": "Save search",
+      "save_and_subscribe": "Save and subscribe",
+      "advanced_search": "Advanced search"
+    },
+    "result_item": {
+      "year": "Year:",
+      "quality": "Quality:",
+      "not_available": "Not available"
+    },
+    "result_box": {
+      "results": "results",
+      "pending_search": "Perform a search by entering a keyword above or selecting the appropriate filters from the list on the right."
+    },
+    "result_list": {
+      "no_results": "No results found.",
+      "on_remove": "Successfully removed %{documents_count} documents",
+      "on_email": "An email has been sent to %{email} with %{documents_count} documents",
+      "on_save": "Saved %{documents_count} documents"
+    },
+    "sort_order": {
+      "sorted_by": "Sort by",
+      "relevance": "Best match",
+      "most_recent": "Most recent",
+      "highest_quality": "Highest quality"
+    },
+    "signup_prompt": {
+      "instructions": "Sign up to view more than 20 results, to save documents and searches, and to subscribe to email alerts"
+    }
+  },
+  "profile_page": {
+    "title": "My profile",
+    "successfully_updated": "Successfully updated profile",
+    "account_information": "Account Information",
+    "email": "Email",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "personal_information": "Personal Information",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "role": "Role",
+    "country": "Country",
+    "language": "Language",
+    "cannot_load_user_profile": "Opps, couldn't load user profile. Check your interent connection and try again",
+    "short_cannot_load_user_profile": "Cannot load user profile information",
+    "edit": "Edit",
+    "cancel": "Cancel"
+  },
+  "complementary_content_page": {
+    "title": "Complementary content",
+    "description": "Enable viewing of complementary content",
+    "complementary_content_2": {
+      "title": "CANADA'S HEALTH SYSTEMS DOCUMENTS",
+      "description": "For those who do not designate their country as Canada or log in using a Canada-based IP address"
+    },
+    "complementary_content_3": {
+      "title": "ONTARIO'S HEALTH SYSTEM DOCUMENTS",
+      "description": "For those who log in Ontario-based IP address"
+    }
+  },
+  "top_5_page": {
+    "title_short": "Top five",
+    "title": {
+      "all": "Top five 1-pagers accessed by all users",
+      "policy_makers": "Top five 1-pagers accessed by policymakers"
+    }
+  },
+  "forgot_password_page": {
+    "title": "Forgot Password",
+    "email": "Email",
+    "instructions": "Enter the email you use for login below and we will send you a link to reset your password",
+    "submit": "Send email",
+    "on_success": "An email that will allow you to re-set your password has been sent to your email account."
+  },
+  "reset_password_page": {
+    "title": "Reset Password",
+    "password": "Password",
+    "confirm_password": "Confirm password",
+    "submit": "Reset password",
+    "password_retained": "Thank you. Your original password has been retained."
+  },
+  "newsletter_page": {
+    "title": "Newsletter"
+  },
+  "unsubscribe_page": {
+    "title": "Unsubscribe",
+    "confirmation_msg": "Please click the button below to confirm that you would like to unsubscribe from the Evidence Service",
+    "unsubscribe": "Unsubscribe",
+    "success": "Successfully unsubscribed from newsletter"
+  },
+  "saved_search_page": {
+    "title": "Saved searches",
+    "subscribed_only": "Show only subscribed searches",
+    "instructions": "You can subscribe up to one saved search and one curated search",
+    "subscribe": "Subscribe to search",
+    "dialog": {
+      "message": "Creating a new subscribed search will unsubscribe you from your current one. Are you sure you want to do this?",
+      "cancel": "Cancel",
+      "confirm": "New search"
+    },
+    "on_remove": "Successfully removed %{searches_count} searches"
+  },
+  "saved_articles_page": {
+    "title": "Saved documents",
+    "warning": "Documents you saved will be kept on this page for up to 6 hours.",
+    "instructions": "You can email or export those documents.",
+    "email": "Email",
+    "export": "Export"
+  },
+  "quota_exceeded_error_page": {
+    "title": "Limit exceeded",
+    "body": [
+      "Limit exceeded. You have made too many requests in a short period of time than we allow.",
+      "",
+      "We limit the number of allowed requests to protect Health Systems Evidence from inappropriate use.",
+      "",
+      "If you feel this is an error on our part, please email [michael.yagudaev@func-i.com](michael.yagudaev@func-i.com)"
+    ]
+  },
+  "errors": {
+    "no_connection": "Oops, could not load data. Check your internet connection.",
+    "cant_be_blank": "can't be blank!",
+    "must_accept_terms": "you must accept the terms and conditions!",
+    "already_exists": "already exists",
+    "invalid_email": "email is invalid",
+    "too_short": "is too short, must be at least 8 characters",
+    "invalid_login": "wrong username or password",
+    "passwords_must_match": "passwords must match",
+    "invalid": "invalid",
+    "signup_to_increase_limit": "You have exceeded our record limit. Please log in (or create an account for free) if you wish to access more documents."
+  }
+}
