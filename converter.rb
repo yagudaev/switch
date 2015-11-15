@@ -61,6 +61,10 @@ def remove_missing_translations(keys, columns)
   columns
 end
 
+def move_english_as_first_column(columns)
+  columns.unshift columns.delete_at(columns.index { |lang| lang[:name] == 'en' })
+end
+
 def columns_to_rows(keys, columns)
   rows = keys.map do |key|
     row = columns.map {|lang| lang[:data][key] }
@@ -69,8 +73,14 @@ def columns_to_rows(keys, columns)
   end
 end
 
+def add_order_column(rows)
+  rows.each_with_index do |row, i|
+    row.push(i + 1)
+  end
+end
+
 def add_header(rows, columns)
-  rows.unshift (columns.map { |l| l[:name] } + ["keys"])
+  rows.unshift (columns.map { |l| l[:name] } + ["keys", "order"])
 end
 
 def write_file(rows, csv_file)
@@ -91,8 +101,10 @@ def main
 
   keys = get_keys_from(columns)
   columns = remove_missing_translations(keys, columns)
+  columns = move_english_as_first_column(columns)
 
   rows = columns_to_rows(keys, columns)
+  rows = add_order_column(rows)
   add_header(rows, columns)
 
   csv_file = OUTPUT_FILE
