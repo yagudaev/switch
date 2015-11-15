@@ -15,6 +15,7 @@ Dotenv.load
 
 require './extensions'
 require './json2csv'
+require './csv2json'
 require './cloud_sync'
 
 def main
@@ -26,7 +27,8 @@ def main
     client = CloudSync.new
     client.upload_to_drive(csv_file)
   when "csv2json"
-    puts "to be implemented!"
+    client = CloudSync.new
+    client.download_from_drive(FILE_NAME)
   else
     puts "Unknown option!"
     puts "Please use either"
