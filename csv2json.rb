@@ -5,9 +5,12 @@ class Csv2Json
 
   def convert
     @rows = CSV.read(@file)
-    # sort by order
+    @header = @rows.shift
 
-    languages = @rows[0] - ['keys', 'order']
+    order_index = @header.index 'order'
+    @rows.sort! {|a, b| a[order_index].to_i <=> b[order_index].to_i }
+
+    languages = @header - ['keys', 'order']
     for lang in languages
       data = extract_hash_for(lang)
       write_json_file(lang, data)
@@ -17,13 +20,13 @@ class Csv2Json
 private
   def extract_hash_for(lang)
     hash = {}
-    lang_column = @rows[0].index lang
-    key_column = @rows[0].index 'keys'
+    lang_index = @header.index lang
+    key_index = @header.index 'keys'
 
-    raise "No key column found!" unless key_column
+    raise "No key column found!" unless key_index
 
-    @rows[1..-1].each do |row|
-      hash[row[key_column]] = get_value(row[lang_column] || "")
+    @rows.each do |row|
+      hash[row[key_index]] = get_value(row[lang_index] || "")
     end
 
     hash = dot_notation_to_nested_hash(hash)
