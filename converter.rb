@@ -29,6 +29,7 @@ def main
   when "csv2json"
     client = CloudSync.new
     client.download_from_drive(FILE_NAME)
+    json_files = Csv2Json.new(OUTPUT_FILE).convert
   else
     puts "Unknown option!"
     puts "Please use either"
