@@ -97,7 +97,7 @@ def connect_to_drive
   session = GoogleDrive.saved_session(SAVE_SESSION_FILE, nil, CLIENT_ID, CLIENT_SECRET)
 end
 
-def main
+def json_2_csv
   files = Dir['./data/*'].select{|f| File.extname(f) == '.json'}
   columns = columns_for_json(files)
 
@@ -113,6 +113,11 @@ def main
   puts "Writing local file to #{csv_file}"
   write_file(rows, csv_file)
 
+  puts "Successfully conveted #{files.count}. File #{csv_file}"
+  csv_file
+end
+
+def upload_to_drive(csv_file)
   puts "Connecting to google drive"
   session = connect_to_drive()
 
@@ -124,11 +129,15 @@ def main
   end
   file = session.upload_from_file(csv_file, FILE_NAME)
 
-  puts "Done all work. Successfully conveted #{files.count}"
   puts "You can find the new file here"
   puts file.human_url
 
   Launchy.open(file.human_url)
+end
+
+def main
+  csv_file = json_2_csv
+  upload_to_drive(csv_file)
 end
 
 main
