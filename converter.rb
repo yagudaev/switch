@@ -5,13 +5,15 @@ require 'bundler/setup'
 
 require 'json'
 require 'csv'
-require './extensions'
 require 'google_drive'
+require 'launchy'
 
 require 'pry'
 
 require 'dotenv'
 Dotenv.load
+
+require './extensions'
 
 CLIENT_ID = ENV['GOOGLE_DRIVE_CLIENT_ID']
 CLIENT_SECRET = ENV['GOOGLE_DRIVE_CLIENT_SECRET']
@@ -120,9 +122,13 @@ def main
     puts "Detected old version of #{FILE_NAME}, deleting file!"
     file.delete(true)
   end
-  session.upload_from_file(csv_file, FILE_NAME)
+  file = session.upload_from_file(csv_file, FILE_NAME)
 
   puts "Done all work. Successfully conveted #{files.count}"
+  puts "You can find the new file here"
+  puts file.human_url
+
+  Launchy.open(file.human_url)
 end
 
 main

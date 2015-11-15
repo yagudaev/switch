@@ -89,6 +89,7 @@ PLATFORMS
 DEPENDENCIES
   dotenv
   google_drive
+  launchy
   pry
 
 BUNDLED WITH
