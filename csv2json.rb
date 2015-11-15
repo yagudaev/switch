@@ -23,10 +23,18 @@ private
     raise "No key column found!" unless key_column
 
     @rows[1..-1].each do |row|
-      hash[row[key_column]] = row[lang_column] || ""
+      hash[row[key_column]] = get_value(row[lang_column] || "")
     end
 
     hash = dot_notation_to_nested_hash(hash)
+  end
+
+  def get_value(value)
+    value = value || ""
+    # multi-line json string support
+    value = value.split("\n")
+    value = value[0] if value.count == 1
+    value
   end
 
   def write_json_file(lang, data)

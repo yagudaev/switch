@@ -7,6 +7,10 @@ module Enumerable
     self.each_with_index do |elem, i|
       if elem.is_a?(Array)
         k, v = elem
+        # support for multiline strings in json, maybe we need a parameter here? on/off?
+        if v.is_a?(Array) && v.all? {|c| c.is_a?(String)}
+          v = v.join("\n")
+        end
       else
         k, v = i, elem
       end
