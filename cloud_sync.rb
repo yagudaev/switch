@@ -13,8 +13,9 @@ class CloudSync
     if file = @session.spreadsheet_by_title(FILE_NAME)
       puts "Detected old version of #{FILE_NAME}, updating file!"
       file.update_from_file(csv_file)
+    else
+      file = @session.upload_from_file(csv_file, FILE_NAME)
     end
-    file = @session.upload_from_file(csv_file, FILE_NAME)
 
     puts "You can find the new file here"
     puts file.human_url
