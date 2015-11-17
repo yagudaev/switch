@@ -22,18 +22,20 @@ private
     hash = {}
     lang_index = @header.index lang
     key_index = @header.index 'keys'
+    en_lang_index = @header.index 'en'
 
     raise "No key column found!" unless key_index
 
     @rows.each do |row|
-      hash[row[key_index]] = get_value(row[lang_index] || "")
+      hash[row[key_index]] = get_value(lang, row[lang_index], row[en_lang_index])
     end
 
     hash = dot_notation_to_nested_hash(hash)
   end
 
-  def get_value(value)
-    value = value || ""
+  def get_value(lang, value, en_value)
+    en_value ||= ""
+    value = value || "#{lang.upcase}_#{en_value}"
     # multi-line json string support
     value = value.split("\n")
     value = value[0] if value.count == 1
