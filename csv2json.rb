@@ -1,3 +1,7 @@
+require 'csv'
+require 'json'
+require 'pry'
+
 class Csv2Json
   def initialize(file)
     @file = file
@@ -10,11 +14,14 @@ class Csv2Json
     order_index = @header.index 'order'
     @rows.sort! {|a, b| a[order_index].to_i <=> b[order_index].to_i }
 
+    files = []
     languages = @header - ['keys', 'order']
     for lang in languages
       data = extract_hash_for(lang)
-      write_json_file(lang, data)
+      files.push write_json_file(lang, data)
     end
+
+    files
   end
 
 private
@@ -49,6 +56,8 @@ private
     end
 
     puts "Wrote file #{file_path}"
+
+    file_path
   end
 
   # http://stackoverflow.com/a/4366196/1321251
@@ -57,6 +66,6 @@ private
       main_key.to_s.split(".").reverse.inject(main_value) do |value, key|
         {key.to_sym => value}
       end
-    end.inject(&:deep_merge)
+    end.inject(&:merge)
   end
 end

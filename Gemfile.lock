@@ -13,6 +13,7 @@ GEM
       extlib (>= 0.9.15)
       multi_json (>= 1.0.0)
     coderay (1.1.0)
+    diff-lcs (1.2.5)
     dotenv (2.0.2)
     extlib (0.9.16)
     faraday (0.9.2)
@@ -72,6 +73,19 @@ GEM
       slop (~> 3.4)
     rack (1.6.4)
     retriable (1.4.1)
+    rspec (3.4.0)
+      rspec-core (~> 3.4.0)
+      rspec-expectations (~> 3.4.0)
+      rspec-mocks (~> 3.4.0)
+    rspec-core (3.4.1)
+      rspec-support (~> 3.4.0)
+    rspec-expectations (3.4.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-mocks (3.4.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-support (3.4.1)
     signet (0.6.1)
       addressable (~> 2.3)
       extlib (~> 0.9)
@@ -91,6 +105,7 @@ DEPENDENCIES
   google_drive
   launchy
   pry
+  rspec
 
 BUNDLED WITH
    1.10.6
