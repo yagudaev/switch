@@ -1,6 +1,6 @@
-require 'spec_helper'
 
-describe Json2Csv do
+
+describe Switch::Json2Csv do
   before do
 
   end

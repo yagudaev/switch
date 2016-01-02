@@ -1,16 +1,14 @@
-require 'spec_helper'
-
 module Helper
   def convert(csv)
     @temp = Tempfile.new 'temp.csv'
     @temp.write csv
     @temp.rewind
-    @converter = Csv2Json.new(@temp)
+    @converter = Switch::Csv2Json.new(@temp)
     @files = @converter.convert
   end
 end
 
-describe Csv2Json do
+describe Switch::Csv2Json do
   include Helper
 
   context "with a single column csv" do

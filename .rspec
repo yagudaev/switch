@@ -1,1 +1,1 @@
---color --format progress
+--color --format progress --require spec_helper
