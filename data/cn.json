@@ -3,9 +3,9 @@
   "beta": "测试版",
   "terms_of_use": "使用条款",
   "toggle_navigation": "切换导航",
-  "select_all": "CN_Select all",
+  "select_all": "全选",
   "select": "选择：",
-  "remove_selected": "CN_Remove selected",
+  "remove_selected": "删除所选",
   "main_menu": {
     "home": "主页",
     "about": "关于卫生系统证据（HSE)",
@@ -85,13 +85,13 @@
     }
   },
   "home_page": {
-    "intro": "CN_The world's most comprehensive, free access point for evidence to support policy makers, stakeholders and researches interested in how to strengthen or reform health systems or in how to get cost-effective programs, services and drugs to those who need them."
+    "intro": "世界最全面的免费证据网站，可支持关注加强或改革卫生系统或为用户提供符合成本效果的项目、服务和药物的政策制定者、利益相关者和研究者。"
   },
   "articles_page": {
     "back_to_results": "返回结果",
-    "back_to_newsletter": "CN_Back to newsletter",
-    "back_to_top_5": "CN_Back to top five",
-    "back_to_saved_documents": "CN_Back to saved documents",
+    "back_to_newsletter": "返回简讯",
+    "back_to_top_5": "返回前五项",
+    "back_to_saved_documents": "返回已保存文件",
     "no_studies_conducted_in": "无法获取",
     "no_full_text_report": "无免费全文",
     "no_doi": "尚不能获取",
@@ -119,9 +119,9 @@
       "tips": "如何实现更有效检索",
       "filters": "限定项",
       "placeholder": "检索……",
-      "save": "CN_Save search",
-      "save_and_subscribe": "CN_Save and subscribe",
-      "advanced_search": "CN_Advanced search"
+      "save": "保存检索",
+      "save_and_subscribe": "保存并订阅",
+      "advanced_search": "高级检索"
     },
     "result_item": {
       "year": "年份：",
@@ -129,20 +129,20 @@
       "not_available": "无法获取"
     },
     "result_box": {
-      "results": "结果"
+      "results": "结果",
+      "pending_search": "输入上方关键词或在右侧菜单选择恰当的限定项进行检索"
     },
     "result_list": {
       "no_results": "未找到相应结果。",
-      "on_remove": "CN_Successfully removed %{documents_count} documents",
-      "on_email": "CN_An email was sent to %{email} with %{documents_count} documents",
-      "on_save": "CN_Saved %{documents_count} documents",
-      "pending_search": "CN_Perform a search by entering a keyword above or selecting the appropriate filters from the list on the right."
+      "on_remove": "成功删除%{documents_count}个文件",
+      "on_email": "电子邮件及%{documents_count}个文件已成功发送至%{email}",
+      "on_save": "已保存%{documents_count}个文件"
     },
     "sort_order": {
-      "sorted_by": "按……排序的结果",
+      "sorted_by": "按……分为",
       "relevance": "最相关",
       "most_recent": "最近发表",
-      "highest_quality": "CN_Highest quality"
+      "highest_quality": "最高质量"
     },
     "signup_prompt": {
       "instructions": "注册以查看20条以后的结果，保存文档和检索，发送电子邮件和导出文件，以及订阅邮件提醒"
@@ -179,7 +179,7 @@
     }
   },
   "top_5_page": {
-    "title_short": "CN_Top five",
+    "title_short": "前五项",
     "title": {
       "all": "用户访问最多的五个页面",
       "policy_makers": "决策者访问最多的五个页面"
@@ -197,44 +197,44 @@
     "password": "密码",
     "confirm_password": "确认密码",
     "submit": "重置密码",
-    "password_retained": "CN_Thank you. Your original password has been retained."
+    "password_retained": "非常感谢！您的初始密码已保存。"
   },
   "newsletter_page": {
     "title": "新闻简报"
   },
   "unsubscribe_page": {
     "title": "取消订阅",
-    "confirmation_msg": "CN_Please click the button below to confirm that you would like to unsubscribe from the Evidence Service",
+    "confirmation_msg": "请点击下方按钮以确认您将取消订阅本证据服务。",
     "unsubscribe": "取消订阅",
-    "success": "CN_Successfully unsubscribed from newsletter"
+    "success": "成功取消订阅简讯。"
   },
   "saved_search_page": {
-    "title": "CN_Saved searches",
-    "subscribed_only": "CN_Show only subscribed searches",
-    "instructions": "CN_You can subscribe up to one saved search and one curated search",
-    "subscribe": "CN_Subscribe to search",
+    "title": "已保存的检索",
+    "subscribed_only": "只显示订阅检索",
+    "instructions": "您可订阅一个已保存的检索和一个策划检索",
+    "subscribe": "订阅检索",
     "dialog": {
-      "message": "CN_Creating a new subscribed search will unsubscribe you from your current one. Are you sure you want to do this?",
-      "cancel": "CN_Cancel",
-      "confirm": "CN_New search"
+      "message": "建立新的检索订阅将取消您之前所建立的，是否确认？",
+      "cancel": "取消",
+      "confirm": "新的检索"
     },
-    "on_remove": "CN_Successfully removed %{searches_count} searches"
+    "on_remove": "成功删除%{documents_count}个搜索"
   },
   "saved_articles_page": {
-    "title": "CN_Saved documents",
-    "warning": "CN_Documents you saved will be kept on this page for up to 6 hours.",
-    "instructions": "CN_You can email or export those documents.",
+    "title": "已保存文件",
+    "warning": "您所保存的文件在此页面中的时限为六小时。",
+    "instructions": "您可通过电子邮件发送这些文件，或将其导出。",
     "email": "电子邮件",
-    "export": "CN_Export"
+    "export": "导出"
   },
   "quota_exceeded_error_page": {
-    "title": "CN_Limit exceeded",
+    "title": "超限",
     "body": [
-      "CN_Limit exceeded. You have made too many requests in a short period of time than we allow.",
+      "超限。您在短时间内发出的请求超出了所允许的数量。",
       "",
-      "CN_We limit the number of allowed requests to protect Health Systems Evidence from inappropriate use.",
+      "为保证卫生系统证据网站的正常使用，我们限制了允许的请求数量。",
       "",
-      "CN_If you feel this is an error on our part, please email [michael.yagudaev@func-i.com](michael.yagudaev@func-i.com)"
+      "如果您认为我们存在错误，请通过邮件联系 [michael.yagudaev@func-i.com](michael.yagudaev@func-i.com)."
     ]
   },
   "errors": {
@@ -247,6 +247,6 @@
     "invalid_login": "用户名或密码错误",
     "passwords_must_match": "密码必须匹配",
     "invalid": "无效",
-    "signup_to_increase_limit": "CN_You have exceeded our record limit. Please log in (or create an account for free) if you wish to access more documents."
+    "signup_to_increase_limit": "您已超出我们的记录允许，如果想要获取更多文件，请登陆或注册免费账号。"
   }
 }

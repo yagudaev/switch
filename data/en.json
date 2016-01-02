@@ -114,6 +114,10 @@
     "no_last_year_literature_searched": "Not available"
   },
   "search_page": {
+    "on_save_search": "Successfully saved search",
+    "on_unsave_search": "Successfully removed saved search",
+    "on_save_and_subscribe": "Successfully saved and subscribed to search",
+    "on_unsubscribe": "Successfully unsubscribed from search",
     "search_box": {
       "view_results_count": "View %{results_count} results",
       "tips": "Search tips",
@@ -218,7 +222,8 @@
       "cancel": "Cancel",
       "confirm": "New search"
     },
-    "on_remove": "Successfully removed %{searches_count} searches"
+    "on_remove": "Successfully removed %{searches_count} searches",
+    "curated_searches": "Curated searches"
   },
   "saved_articles_page": {
     "title": "Saved documents",

@@ -3,9 +3,9 @@
   "beta": "bêta",
   "terms_of_use": "Conditions d'utilisation",
   "toggle_navigation": "Faire disparaître le menu de navigation",
-  "select_all": "FR_Select all",
+  "select_all": "Tout sélectionner",
   "select": "Sélectionnez:",
-  "remove_selected": "FR_Remove selected",
+  "remove_selected": "Supprimer la sélection",
   "main_menu": {
     "home": "Accueil",
     "about": "À propos de HSE",
@@ -45,7 +45,7 @@
       "did_not_recieve": "Vous n'avez pas reçu un courriel?",
       "send_again": "Envoyer encore une fois",
       "confirmation_msg": "Un courriel de confirmation vous a été envoyé. SVP, confirmez votre inscription pour activer votre compte!",
-      "already_have_account": "FR_Already have an account?",
+      "already_have_account": "Vous avez déjà un compte?",
       "login": "Ouvrir une session"
     },
     "main": {
@@ -85,13 +85,13 @@
     }
   },
   "home_page": {
-    "intro": "FR_The world's most comprehensive, free access point for evidence to support policy makers, stakeholders and researches interested in how to strengthen or reform health systems or in how to get cost-effective programs, services and drugs to those who need them."
+    "intro": "Le point d'accès le plus complet au monde pour des données probantes afin de soutenir les responsables de politiques, les parties prenantes et les chercheurs intéressés à renforcer ou réformer les systèmes de santé ainsi qu'à mettre en oeuvre des programmes, des services ou des médicaments efficients à ceux qui en ont besoin."
   },
   "articles_page": {
     "back_to_results": "Retour aux résultats",
-    "back_to_newsletter": "FR_Back to newsletter",
-    "back_to_top_5": "FR_Back to top five",
-    "back_to_saved_documents": "FR_Back to saved documents",
+    "back_to_newsletter": "Retour au bulletin",
+    "back_to_top_5": "Retour au top cinq ",
+    "back_to_saved_documents": "Retour aux documents sauvegardés",
     "no_studies_conducted_in": "Non disponible",
     "no_full_text_report": "Aucun rapport intégral disponible",
     "no_doi": "Pas encore disponible",
@@ -119,9 +119,9 @@
       "tips": "Conseils pour une recherche plus puissante",
       "filters": "Filtres",
       "placeholder": "Recherche…",
-      "save": "FR_Save search",
-      "save_and_subscribe": "FR_Save and subscribe",
-      "advanced_search": "FR_Advanced search"
+      "save": "Recherches sauvegardées",
+      "save_and_subscribe": "Sauvegarder et s'abonner",
+      "advanced_search": "Recherche avancée"
     },
     "result_item": {
       "year": "Année:",
@@ -130,19 +130,19 @@
     },
     "result_box": {
       "results": "Résultats",
-      "pending_search": "FR_Perform a search by entering a keyword above or selecting the appropriate filters from the list on the right."
+      "pending_search": "Effectuez une recherche en inscrivant un mot clé ci-dessus ou en sélectionnant les filtres appropriés à partir de la liste à droite."
     },
     "result_list": {
       "no_results": "Aucun résultat trouvé.",
-      "on_remove": "FR_Successfully removed %{documents_count} documents",
-      "on_email": "FR_An email has been sent to %{email} with %{documents_count} documents",
-      "on_save": "FR_Saved %{documents_count} documents"
+      "on_remove": "Les %{documents_count} documents ont été supprimés avec succès",
+      "on_email": "Un courriel a été envoyé avec les %{documents_count} documents",
+      "on_save": "%{documents_count} ont été sauvegardés"
     },
     "sort_order": {
-      "sorted_by": "Résultats triés par",
+      "sorted_by": "Trier par",
       "relevance": "Meilleure correspondance",
       "most_recent": "Le plus récent",
-      "highest_quality": "FR_Highest quality"
+      "highest_quality": "Qualité élevée"
     },
     "signup_prompt": {
       "instructions": "Inscrivez-vous pour afficher plus de 20 résultats, pour sauvegarder des documents et des recherches, pour envoyer par courriel et exporter des documents, et pour vous abonner aux alertes par courriel"
@@ -179,7 +179,7 @@
     }
   },
   "top_5_page": {
-    "title_short": "FR_Top five",
+    "title_short": "Top cinq",
     "title": {
       "all": "Top cinq des résumés de 1 page qui ont été visités par tous les utilisateurs",
       "policy_makers": "Top cinq des résumés de 1 page qui ont été visités par des responsables de politiques"
@@ -197,44 +197,44 @@
     "password": "Mot de passe",
     "confirm_password": "Confirmer le mot de passe",
     "submit": "Réinitialiser le mot de passe",
-    "password_retained": "FR_Thank you. Your original password has been retained."
+    "password_retained": "Merci. Votre ancien mot de passe a été conservé."
   },
   "newsletter_page": {
     "title": "Bulletin d'information"
   },
   "unsubscribe_page": {
     "title": "Se désinscrire",
-    "confirmation_msg": "FR_Please click the button below to confirm that you would like to unsubscribe from the Evidence Service",
+    "confirmation_msg": "SVP, cliquez sur le bouton ci-dessous pour confirmer que vous souhaitez vous désinscrire du Service de données probantes",
     "unsubscribe": "Se désinscrire",
-    "success": "FR_Successfully unsubscribed from newsletter"
+    "success": "Votre désabonnement au bulletin d'information est confirmé"
   },
   "saved_search_page": {
-    "title": "FR_Saved searches",
-    "subscribed_only": "FR_Show only subscribed searches",
-    "instructions": "FR_You can subscribe up to one saved search and one curated search",
-    "subscribe": "FR_Subscribe to search",
+    "title": "Recherches sauvegardées",
+    "subscribed_only": "Ne montrez que les recherches pour lesquelles vous êtes abonné",
+    "instructions": "Vous pouvez vous abonner jusqu'à une recherche sauvegardée et une recherche organisée",
+    "subscribe": "S'abonner à la recherche",
     "dialog": {
-      "message": "FR_Creating a new subscribed search will unsubscribe you from your current one. Are you sure you want to do this?",
-      "cancel": "FR_Cancel",
-      "confirm": "FR_New search"
+      "message": "Créer un nouvel abonnement annulera votre abonnement actuel. Êtes-vous certain de vouloir poursuivre?",
+      "cancel": "Annuler",
+      "confirm": "Nouvelle recherche"
     },
-    "on_remove": "FR_Successfully removed %{searches_count} searches"
+    "on_remove": "Les %{documents_count} documents ont été supprimés avec succès"
   },
   "saved_articles_page": {
-    "title": "FR_Saved documents",
-    "warning": "FR_Documents you saved will be kept on this page for up to 6 hours.",
-    "instructions": "FR_You can email or export those documents.",
+    "title": "Documents sauvegardés",
+    "warning": "Les documents que vous avez sauvegardés seront conservés sur cette page pour une période de 6 heures.",
+    "instructions": "Vous pouvez envoyer ces documents par courriel ou les exporter.",
     "email": "Courriel",
-    "export": "FR_Export"
+    "export": "Exporter"
   },
   "quota_exceeded_error_page": {
-    "title": "FR_Limit exceeded",
+    "title": "Limite dépassée",
     "body": [
-      "FR_Limit exceeded. You have made too many requests in a short period of time than we allow.",
+      "Limite dépassée. Vous avez fait un nombre de demandes supérieur à ce que nous autorisons dans une courte période de temps.",
       "",
-      "FR_We limit the number of allowed requests to protect Health Systems Evidence from inappropriate use.",
+      "Nous limitons le nombre de requêtes pour protéger Health System Evidence contre les usages inappropriés.",
       "",
-      "FR_If you feel this is an error on our part, please email [michael.yagudaev@func-i.com](michael.yagudaev@func-i.com)"
+      "Si vous pensez qu'il s'agit d'une erreur de notre part, veuillez écrire à [michael.yagudaev@func-i.com](michael.yagudaev@func-i.com)"
     ]
   },
   "errors": {
@@ -247,6 +247,6 @@
     "invalid_login": "Nom d'utilisateur ou mot de passe incorrect",
     "passwords_must_match": "Les mots de passe doivent correspondre",
     "invalid": "Invalide",
-    "signup_to_increase_limit": "FR_You have exceeded our record limit. Please log in (or create an account for free) if you wish to access more documents."
+    "signup_to_increase_limit": "Vous avez dépassé la limite de sauvegarde. Veuillez vous connecter (ou créer un compte gratuitement) si vous souhaitez accéder à plus de documents."
   }
 }

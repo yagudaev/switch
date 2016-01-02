@@ -3,9 +3,9 @@
   "beta": "beta",
   "terms_of_use": "Termos de uso",
   "toggle_navigation": "Alternar navegação",
-  "select_all": "PT_Select all",
+  "select_all": "Selecionar tudo",
   "select": "Selecionar:",
-  "remove_selected": "PT_Remove selected",
+  "remove_selected": "Remover selecionados",
   "main_menu": {
     "home": "Início",
     "about": "Sobre o HSE",
@@ -85,13 +85,13 @@
     }
   },
   "home_page": {
-    "intro": "PT_The world's most comprehensive, free access point for evidence to support policy makers, stakeholders and researches interested in how to strengthen or reform health systems or in how to get cost-effective programs, services and drugs to those who need them."
+    "intro": "O ponto de acesso gratuito mais abrangente do mundo para evidência que ajuda formuladores de políticas, partes interessadas e pesquisas interessados em como reforçar ou reformar sistemas de saúde ou em como obter programas, serviços e fármacos economicamente viáveis para aqueles que precisam deles."
   },
   "articles_page": {
     "back_to_results": "Voltar aos resultados",
-    "back_to_newsletter": "PT_Back to newsletter",
-    "back_to_top_5": "PT_Back to top five",
-    "back_to_saved_documents": "PT_Back to saved documents",
+    "back_to_newsletter": "Voltar ao boletim",
+    "back_to_top_5": "Voltar a principais cinco",
+    "back_to_saved_documents": "Voltar a documentos salvados",
     "no_studies_conducted_in": "Não disponível",
     "no_full_text_report": "Relatório completo gratuito não disponível",
     "no_doi": "Ainda não disponível",
@@ -119,9 +119,9 @@
       "tips": "Dicas para uma pesquisa mais eficaz",
       "filters": "Filtros",
       "placeholder": "Pesquisar...",
-      "save": "PT_Save search",
-      "save_and_subscribe": "PT_Save and subscribe",
-      "advanced_search": "PT_Advanced search"
+      "save": "Pesquisas salvadas",
+      "save_and_subscribe": "Salvar e assinar",
+      "advanced_search": "Pesquisa avançada"
     },
     "result_item": {
       "year": "Ano:",
@@ -129,20 +129,20 @@
       "not_available": "Não disponível"
     },
     "result_box": {
-      "results": "Resultados"
+      "results": "Resultados",
+      "pending_search": "Realize uma pesquisa inserindo uma palavra-chave acima ou selecionando os filtros adequados na lista exibida do lado direito."
     },
     "result_list": {
       "no_results": "Nenhum resultado encontrado.",
-      "on_remove": "PT_Successfully removed %{documents_count} documents",
-      "on_email": "PT_An email has been sent to %{email} with %{documents_count} documents",
-      "on_save": "PT_Saved %{documents_count} documents",
-      "pending_search": "PT_Perform a search by entering a keyword above or selecting the appropriate filters"
+      "on_remove": "Removeu com êxito %{documents_count} documentos",
+      "on_email": "Foi enviado um e-mail para %{email} com %{documents_count} documentos",
+      "on_save": "Salvou %{documents_count} documentos"
     },
     "sort_order": {
-      "sorted_by": "Resultados classificados por",
+      "sorted_by": "Classificar por",
       "relevance": "Melhor correspondência",
       "most_recent": "Mais recente",
-      "highest_quality": "PT_Highest quality"
+      "highest_quality": "Mais alta qualidade"
     },
     "signup_prompt": {
       "instructions": "Inscreva-se para exibir mais de 20 resultados, salvar documentos e pesquisas, enviar e-mails com documentos e exportá-los e para assinar alertas por e-mail"
@@ -179,7 +179,7 @@
     }
   },
   "top_5_page": {
-    "title_short": "PT_Top five",
+    "title_short": "Principais cinco",
     "title": {
       "all": "Cinco principais resumos de 1 página acessados por todos os usuários",
       "policy_makers": "Cinco principais resumos de 1 página acessados por formuladores de políticas"
@@ -197,44 +197,44 @@
     "password": "Senha",
     "confirm_password": "Confirmar senha",
     "submit": "Redefinir senha",
-    "password_retained": "PT_Thank you. Your original password has been retained."
+    "password_retained": "Obrigado. Sua senha original foi retida."
   },
   "newsletter_page": {
     "title": "Boletim informativo"
   },
   "unsubscribe_page": {
     "title": "Cancelar assinatura",
-    "confirmation_msg": "PT_Please click the button below to confirm that you would like to unsubscribe from the Evidence Service",
+    "confirmation_msg": "Clique no botão abaixo para confirmar que gostaria de cancelar a assinatura do Serviço Evidência",
     "unsubscribe": "Cancelar assinatura",
-    "success": "PT_Successfully unsubscribed from newsletter"
+    "success": "Assinatura do boletim cancelada com êxito"
   },
   "saved_search_page": {
-    "title": "PT_Saved searches",
-    "subscribed_only": "PT_Show only subscribed searches",
-    "instructions": "PT_You can subscribe up to one saved search and one curated search",
-    "subscribe": "PT_Subscribe to search",
+    "title": "Pesquisas salvadas",
+    "subscribed_only": "Mostrar apenas pesquisas assinadas",
+    "instructions": "Pode assinar uma pesquisa salvada e uma pesquisa com curadoria",
+    "subscribe": "Assinar pesquisa",
     "dialog": {
-      "message": "PT_Creating a new subscribed search will unsubscribe you from your current one. Are you sure you want to do this?",
-      "cancel": "PT_Cancel",
-      "confirm": "PT_New search"
+      "message": "A criação de uma nova pesquisa assinada cancelará a assinatura relativa à sua pesquisa atual. Tem certeza que deseja executar essa ação?",
+      "cancel": "Cancelar",
+      "confirm": "Nova pesquisa"
     },
-    "on_remove": "PT_Successfully removed %{searches_count} searches"
+    "on_remove": "Removeu com êxito %{documents_count} documentos"
   },
   "saved_articles_page": {
-    "title": "PT_Saved documents",
-    "warning": "PT_Documents you saved will be kept on this page for up to 6 hours.",
-    "instructions": "PT_You can email or export those documents.",
+    "title": "Documentos salvados",
+    "warning": "Os documentos que salvou serão mantidos nesta página durante um máximo de 6 horas.",
+    "instructions": "Pode enviar por e-mail ou exportar esses documentos.",
     "email": "E-mail",
-    "export": "FR_Export"
+    "export": "Exportar"
   },
   "quota_exceeded_error_page": {
-    "title": "PT_Limit exceeded",
+    "title": "Limite excedido",
     "body": [
-      "PT_Limit exceeded. You have made too many requests in a short period of time than we allow.",
+      "Limite excedido. Você fez demasiadas solicitações em um curto período de tempo além das permitidas.",
       "",
-      "PT_We limit the number of allowed requests to protect Health Systems Evidence from inappropriate use.",
+      "Limitamos o número de solicitações permitas para proteger o Health Systems Evidence de uso indevido.\r",
       "",
-      "PT_If you feel this is an error on our part, please email [michael.yagudaev@func-i.com](michael.yagudaev@func-i.com)"
+      "Se considera que isso é um erro da nossa parte, envie um e-mail para [michael.yagudaev@func-i.com](michael.yagudaev@func-i.com)"
     ]
   },
   "errors": {
@@ -247,6 +247,6 @@
     "invalid_login": "Nome de usuário e senha incorretos",
     "passwords_must_match": "As senhas devem coincidir",
     "invalid": "Não é válido",
-    "signup_to_increase_limit": "PT_You have exceeded our record limit. Please log in (or create an account for free) if you wish to access more documents."
+    "signup_to_increase_limit": "Você excedeu nosso limite máximo. Inicie sessão (ou crie uma conta gratuita) se desejar acessar mais documentos."
   }
 }
