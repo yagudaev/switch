@@ -60,4 +60,15 @@ describe Csv2Json do
       expect(File.new(@files[1]).read).to eq("{\n  \"greeting\": \"FR_hello\"\n}")
     end
   end
+
+  context "supports nested keys" do
+    before do
+      csv = %Q{en,keys,order\nhello,greeting.title,1}
+      convert(csv)
+    end
+
+    it "should support nested keys" do
+      expect(File.new(@files[0]).read).to eq("{\n  \"greeting\": {\n    \"title\": \"hello\"\n  }\n}")
+    end
+  end
 end

@@ -22,7 +22,7 @@ class Json2Csv
     puts "Writing local file to #{csv_file}"
     write_file(rows, csv_file)
 
-    puts "Successfully conveted #{files.count}. File #{csv_file}"
+    puts "Successfully converted #{files.count}. File #{csv_file}"
     csv_file
   end
 
