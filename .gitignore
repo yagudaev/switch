@@ -1,3 +1,5 @@
 .env
 output/
 test.log
+Gemfile.lock
+/switch-*.gem

@@ -1,13 +1,8 @@
-require 'rubygems'
-require 'bundler/setup'
-
 require 'json'
 require 'csv'
 require 'google_drive'
 require 'launchy'
 require 'logger'
-
-require 'pry'
 
 require 'dotenv'
 Dotenv.load
