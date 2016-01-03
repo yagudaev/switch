@@ -28,11 +28,11 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
 
   # run time
-  s.add_runtime_dependency 'dotenv', '~> 2.0.2'
-  s.add_runtime_dependency 'google_drive', '~> 1.0.2'
-  s.add_runtime_dependency 'launchy', '~> 2.4.3'
+  s.add_runtime_dependency 'dotenv', '~> 2.0'
+  s.add_runtime_dependency 'google_drive', '~> 1.0'
+  s.add_runtime_dependency 'launchy', '~> 2.4'
 
   # dev
-  s.add_development_dependency 'pry', '~> 0.9.12.4'
-  s.add_development_dependency 'rspec', '~> 3.4.0'
+  s.add_development_dependency 'pry', '~> 0.9.12'
+  s.add_development_dependency 'rspec', '~> 3.4'
 end
