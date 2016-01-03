@@ -41,11 +41,6 @@ module Switch
       input ||= './locales/*'
       output ||=  OUTPUT_FILE
 
-      unless input.match(/\*\z/)
-        input += '/' unless input.match(/\/\z/)
-        input += '*'
-      end
-
       csv_file = Json2Csv.new(input).convert(output)
 
       # if google drive option is on

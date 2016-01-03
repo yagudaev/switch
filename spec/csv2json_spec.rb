@@ -1,5 +1,5 @@
 module Helper
-  def convert(csv)
+  def csv2json(csv)
     @temp = Tempfile.new 'temp.csv'
     @temp.write csv
     @temp.rewind
@@ -14,7 +14,7 @@ describe Switch::Csv2Json do
   context "with a single column csv" do
     before do
       csv = %Q{en,keys,order\nhello,greeting,1}
-      convert(csv)
+      csv2json(csv)
     end
 
     it "should create a single json file" do
@@ -29,7 +29,7 @@ describe Switch::Csv2Json do
   context "order column" do
     before do
       csv = %Q{en,keys,order\ngoodbye,ending,2\nhello,greeting,1}
-      convert(csv)
+      csv2json(csv)
     end
 
     it "should be used regardless of the actual order of row order" do
@@ -40,7 +40,7 @@ describe Switch::Csv2Json do
   context "with a two column csv" do
     before do
       csv = %Q{en,fr,keys,order\nhello,bonjour,greeting,1}
-      convert(csv)
+      csv2json(csv)
     end
 
     it "should produce two files" do
@@ -54,7 +54,7 @@ describe Switch::Csv2Json do
 
     it "should duplicate english and prefix it with the language if translation is missing" do
       csv = %Q{en,fr,keys,order\nhello,,greeting,1}
-      convert(csv)
+      csv2json(csv)
       expect(File.new(@files[1]).read).to eq("{\n  \"greeting\": \"FR_hello\"\n}")
     end
   end
@@ -62,7 +62,7 @@ describe Switch::Csv2Json do
   context "supports nested keys" do
     before do
       csv = %Q{en,keys,order\nhello,greeting.title,1}
-      convert(csv)
+      csv2json(csv)
     end
 
     it "should support nested keys" do

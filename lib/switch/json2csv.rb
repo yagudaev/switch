@@ -5,7 +5,7 @@ module Switch
     end
 
     def convert(csv_file)
-      files = Dir[@dir].select{|f| File.extname(f) == '.json'}
+      files = dir_files.select{|f| File.extname(f) == '.json'}
       columns = columns_for_json(files)
 
       keys = get_keys_from(columns)
@@ -58,7 +58,7 @@ module Switch
           # e.g. 'CN_', 'ES_', etc
           pattern = Regexp.new('\A' + lang[:name].upcase + '_')
           if lang[:data][key] && lang[:data][key].match(pattern)
-            lang[:data][key] = ''
+            lang[:data][key] = nil
           end
         end
       end
@@ -93,6 +93,16 @@ module Switch
           csv << row
         end
       end
+    end
+
+    def dir_files
+      dir = @dir
+      unless dir.match(/\*\z/)
+        dir += '/' unless dir.match(/\/\z/)
+        dir += '*'
+      end
+
+      Dir[dir]
     end
   end
 end
