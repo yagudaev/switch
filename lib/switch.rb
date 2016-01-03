@@ -49,13 +49,14 @@ module Switch
       client.upload_to_drive(csv_file, file_name)
     when "csv2json"
       input ||= FILE_NAME
-      output ||= OUTPUT_DIR
+      output_dir = output || OUTPUT_DIR
 
       # if google drive option is on
       client = CloudSync.new
-      client.download_from_drive(input, output)
+      local_input_csv = "#{output_dir}/#{FILE_NAME}"
+      client.download_from_drive(input, local_input_csv)
 
-      json_files = Csv2Json.new(input, output).convert
+      json_files = Csv2Json.new(local_input_csv, output_dir).convert
     else
       puts "Unknown option!"
       puts "Please use either"
