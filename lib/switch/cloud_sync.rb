@@ -5,13 +5,13 @@ module Switch
       @session = GoogleDrive.saved_session(SAVE_SESSION_FILE, nil, CLIENT_ID, CLIENT_SECRET)
     end
 
-    def upload_to_drive(csv_file)
+    def upload_to_drive(input, output)
       Switch.logger.info "Uploading csv for json files"
-      if file = @session.spreadsheet_by_title(FILE_NAME)
-        Switch.logger.info "Detected old version of #{FILE_NAME}, updating file!"
-        file.update_from_file(csv_file)
+      if file = @session.spreadsheet_by_title(output)
+        Switch.logger.info "Detected old version of #{output}, updating file!"
+        file.update_from_file(input)
       else
-        file = @session.upload_from_file(csv_file, FILE_NAME)
+        file = @session.upload_from_file(input, output)
       end
 
       Switch.logger.info "You can find the new file here"
@@ -20,11 +20,11 @@ module Switch
       Launchy.open(file.human_url)
     end
 
-    def download_from_drive(file_name)
-      file = @session.spreadsheet_by_title(file_name)
-      file.export_as_file(OUTPUT_FILE)
+    def download_from_drive(input, output)
+      file = @session.spreadsheet_by_title(input)
+      file.export_as_file(output)
 
-      Switch.logger.info "Downloaded to #{OUTPUT_FILE}"
+      Switch.logger.info "Downloaded to #{output}"
     end
   end
 end

@@ -13,7 +13,6 @@ require './lib/switch/csv2json'
 require './lib/switch/cloud_sync'
 
 module Switch
-  puts "defined a logger!"
   @logger = Logger.new File.open('test.log', 'a')
 
   class << self
@@ -22,22 +21,39 @@ module Switch
 
   CLIENT_ID = ENV['GOOGLE_DRIVE_CLIENT_ID']
   CLIENT_SECRET = ENV['GOOGLE_DRIVE_CLIENT_SECRET']
-  SAVE_SESSION_FILE = "./output/stored_token.json"
+  SAVE_SESSION_FILE = "/tmp/switch_token.json"
 
-  FILE_NAME = "translations.csv"
-  OUTPUT_FILE = "./output/#{FILE_NAME}"
+  FILE_NAME = "locales.csv"
+  OUTPUT_FILE = "/tmp/#{FILE_NAME}"
 
-  def run
+  def self.run
     command = ARGV[0]
+    input = ARGV[1]
+    output = ARGV[2]
 
     case command
     when "json2csv"
-      csv_file = Json2Csv.new('./data/*').convert
+      input ||= './locales/*'
+      output ||=  OUTPUT_FILE
+
+      unless input.match(/\*\z/)
+        input += '/' unless input.match(/\/\z/)
+        input += '*'
+      end
+
+      csv_file = Json2Csv.new(input).convert(output)
+
+      # if google drive option is on
+      file_name = output
       client = CloudSync.new
-      client.upload_to_drive(csv_file)
+      client.upload_to_drive(csv_file, file_name)
     when "csv2json"
+      input ||= FILE_NAME
+
+      # if google drive option is on
       client = CloudSync.new
-      client.download_from_drive(FILE_NAME)
+      client.download_from_drive(input)
+
       json_files = Csv2Json.new(OUTPUT_FILE).convert
     else
       puts "Unknown option!"

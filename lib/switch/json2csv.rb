@@ -4,7 +4,7 @@ module Switch
       @dir = dir
     end
 
-    def convert
+    def convert(csv_file)
       files = Dir[@dir].select{|f| File.extname(f) == '.json'}
       columns = columns_for_json(files)
 
@@ -16,7 +16,6 @@ module Switch
       rows = add_order_column(rows)
       add_header(rows, columns)
 
-      csv_file = OUTPUT_FILE
       Switch.logger.info "Writing local file to #{csv_file}"
       write_file(rows, csv_file)
 
