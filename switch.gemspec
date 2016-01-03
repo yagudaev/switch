@@ -31,6 +31,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'dotenv', '~> 2.0'
   s.add_runtime_dependency 'google_drive', '~> 1.0'
   s.add_runtime_dependency 'launchy', '~> 2.4'
+  s.add_runtime_dependency 'deep_merge', '~> 1.0'
 
   # dev
   s.add_development_dependency 'pry', '~> 0.9.12'

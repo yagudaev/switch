@@ -60,13 +60,16 @@ describe Switch::Csv2Json do
   end
 
   context "supports nested keys" do
-    before do
+    it "should support a single nested keys" do
       csv = %Q{en,keys,order\nhello,greeting.title,1}
       csv2json(csv)
+      expect(File.new(@files[0]).read).to eq("{\n  \"greeting\": {\n    \"title\": \"hello\"\n  }\n}")
     end
 
-    it "should support nested keys" do
-      expect(File.new(@files[0]).read).to eq("{\n  \"greeting\": {\n    \"title\": \"hello\"\n  }\n}")
+    it "should support multiple nested keys" do
+      csv = %Q{en,keys,order\nhello,greeting.title,1\nstranger,greeting.description,2\n}
+      csv2json(csv)
+      expect(File.new(@files[0]).read).to eq("{\n  \"greeting\": {\n    \"title\": \"hello\",\n    \"description\": \"stranger\"\n  }\n}")
     end
   end
 end

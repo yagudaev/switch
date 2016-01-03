@@ -1,3 +1,4 @@
+require 'pry'
 module Switch
   class Csv2Json
     def initialize(input, output)
@@ -64,7 +65,7 @@ module Switch
         main_key.to_s.split(".").reverse.inject(main_value) do |value, key|
           {key.to_sym => value}
         end
-      end.inject(&:merge)
+      end.inject(&:deep_merge)
     end
   end
 end
