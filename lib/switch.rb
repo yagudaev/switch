@@ -13,7 +13,11 @@ require 'switch/csv2json'
 require 'switch/cloud_sync'
 
 module Switch
-  @logger = Logger.new File.open('test.log', 'a')
+  if ENV['TEST']
+    @logger = Logger.new File.open('test.log', 'a')
+  else
+    @logger = Logger.new STDOUT
+  end
 
   class << self
     attr_accessor :logger
