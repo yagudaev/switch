@@ -3,7 +3,7 @@ module Helper
     @temp = Tempfile.new 'temp.csv'
     @temp.write csv
     @temp.rewind
-    @converter = Switch::Csv2Json.new(@temp)
+    @converter = Switch::Csv2Json.new(@temp, '/tmp')
     @files = @converter.convert
   end
 end

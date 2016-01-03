@@ -7,10 +7,10 @@ require 'logger'
 require 'dotenv'
 Dotenv.load
 
-require './lib/switch/extensions'
-require './lib/switch/json2csv'
-require './lib/switch/csv2json'
-require './lib/switch/cloud_sync'
+require 'switch/extensions'
+require 'switch/json2csv'
+require 'switch/csv2json'
+require 'switch/cloud_sync'
 
 module Switch
   @logger = Logger.new File.open('test.log', 'a')
@@ -24,7 +24,8 @@ module Switch
   SAVE_SESSION_FILE = "/tmp/switch_token.json"
 
   FILE_NAME = "locales.csv"
-  OUTPUT_FILE = "/tmp/#{FILE_NAME}"
+  OUTPUT_DIR = "/tmp"
+  OUTPUT_FILE = "#{OUTPUT_DIR}/#{FILE_NAME}"
 
   def self.run
     command = ARGV[0]
@@ -49,12 +50,13 @@ module Switch
       client.upload_to_drive(csv_file, file_name)
     when "csv2json"
       input ||= FILE_NAME
+      output ||= OUTPUT_DIR
 
       # if google drive option is on
       client = CloudSync.new
-      client.download_from_drive(input)
+      client.download_from_drive(input, output)
 
-      json_files = Csv2Json.new(OUTPUT_FILE).convert
+      json_files = Csv2Json.new(input, output).convert
     else
       puts "Unknown option!"
       puts "Please use either"

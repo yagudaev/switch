@@ -1,11 +1,12 @@
 module Switch
   class Csv2Json
-    def initialize(file)
-      @file = file
+    def initialize(input, output)
+      @input = input
+      @output = output
     end
 
     def convert
-      @rows = CSV.read(@file)
+      @rows = CSV.read(@input)
       @header = @rows.shift
 
       order_index = @header.index 'order'
@@ -47,7 +48,7 @@ module Switch
     end
 
     def write_json_file(lang, data)
-      file_path = "./output/#{lang}.json"
+      file_path = "#{@output}/#{lang}.json"
       File.open(file_path, "w") do |f|
         f.write(JSON.pretty_generate(data))
       end
