@@ -28,8 +28,13 @@ module Switch
   SAVE_SESSION_FILE = "/tmp/switch_token.json"
 
   FILE_NAME = "locales.csv"
-  OUTPUT_DIR = "/tmp"
+  OUTPUT_DIR = "/locales"
   OUTPUT_FILE = "#{OUTPUT_DIR}/#{FILE_NAME}"
+
+  # TODO: better defaults
+  # * use locales folder for input/output, not tmp folder
+  # * use folder name as the name for the CSV file
+  # * allow .switch files
 
   def self.run
     command = ARGV[0]
@@ -53,7 +58,7 @@ module Switch
 
       # if google drive option is on
       client = CloudSync.new
-      local_input_csv = "#{output_dir}/#{FILE_NAME}"
+      local_input_csv = "#{output_dir}/#{input}"
       client.download_from_drive(input, local_input_csv)
 
       json_files = Csv2Json.new(local_input_csv, output_dir).convert
