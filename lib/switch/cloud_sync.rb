@@ -24,7 +24,7 @@ module Switch
       file = @session.spreadsheet_by_title(input)
       file.export_as_file(output)
 
-      Switch.logger.info "Downloaded to #{output}"
+      Switch.logger.info "Downloaded file #{input} from google drive to #{output}"
     end
   end
 end
