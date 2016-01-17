@@ -66,4 +66,19 @@ describe Switch::Json2Csv do
       expect(File.new(@output).read).to eq("en,keys,order\nCart,cart_page.title,1\n")
     end
   end
+
+  context "order column" do
+    it "should depend on order of json file" do
+      json2csv({
+        en: {
+          title: 'Site name',
+          slogan: 'Site slogan',
+          cart_page: {
+            title: 'Cart'
+          }
+        }
+      })
+      expect(File.new(@output).read).to eq("en,keys,order\nSite name,title,1\nSite slogan,slogan,2\nCart,cart_page.title,3\n")
+    end
+  end
 end
