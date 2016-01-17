@@ -23,18 +23,24 @@ module Switch
     attr_accessor :logger
   end
 
+  # TODO: need to ask for these on first run and store
+  # in the secret file too
   CLIENT_ID = ENV['GOOGLE_DRIVE_CLIENT_ID']
   CLIENT_SECRET = ENV['GOOGLE_DRIVE_CLIENT_SECRET']
-  SAVE_SESSION_FILE = "/tmp/switch_token.json"
+  SAVE_SESSION_FILE = "#{ENV['HOME']}/.googledrivesecret"
 
-  FILE_NAME = "locales.csv"
-  OUTPUT_DIR = "/locales"
-  OUTPUT_FILE = "#{OUTPUT_DIR}/#{FILE_NAME}"
+  FILE_NAME = File.basename(Dir.pwd) + '.csv'
+  OUTPUT_DIR = "locales"
 
-  # TODO: better defaults
-  # * use locales folder for input/output, not tmp folder
-  # * use folder name as the name for the CSV file
+  # TODO:
+  # * better file not found errors
   # * allow .switch files
+  # --google-drive --no-local-file
+  # `switch sync` runs a .switch file in the directory with
+  # json2csv: locales locales.csv --google-drive --no-open
+  # csv2json: locales.csv locales --google-drive --no-open
+  # live switch - create a live replica
+  # issue with order, when adding stuff in the middle to json file
 
   def self.run
     command = ARGV[0]
@@ -44,14 +50,13 @@ module Switch
     case command
     when "json2csv"
       input ||= './locales/*'
-      output ||=  OUTPUT_FILE
+      output ||=  FILE_NAME
 
       csv_file = Json2Csv.new(input).convert(output)
 
       # if google drive option is on
-      file_name = output
       client = CloudSync.new
-      client.upload_to_drive(csv_file, file_name)
+      client.upload_to_drive(csv_file, output)
     when "csv2json"
       input ||= FILE_NAME
       output_dir = output || OUTPUT_DIR
