@@ -7,7 +7,7 @@ The most common use case of switch is for switching between a locale representat
 ## Install
 
 ```
-gem install switch
+gem install switch-cli
 ```
 
 ## Usage
