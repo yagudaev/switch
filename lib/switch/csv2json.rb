@@ -52,6 +52,7 @@ module Switch
       file_path = "#{@output}/#{lang}.json"
       File.open(file_path, "w") do |f|
         f.write(JSON.pretty_generate(data))
+        f.write("\n")
       end
 
       Switch.logger.info "Wrote file #{file_path}"
