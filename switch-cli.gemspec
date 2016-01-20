@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'switch-cli'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.executables << 'switch'
   s.date        = '2016-01-02'
   s.summary     = "Command-line utility to convert translation files to spreadsheet and vice-versa"
