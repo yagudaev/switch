@@ -5,6 +5,7 @@ Switch helps you add multiple languages to your site by leveraging the power of 
 The most common use case of switch is for switching between a locale representation in JSON/YAML to a CSV (spreadsheet) based one and vice-versa.
 
 [Watch introduction video](https://www.youtube.com/watch?v=9J9G0qybgSE)
+
 [Read introduction blog post](http://yagudaev.com/posts/introducing-the-switch-gem/)
 
 ## Install
