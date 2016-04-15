@@ -22,6 +22,8 @@ module Switch
 
     def download_from_drive(input, output)
       file = @session.spreadsheet_by_title(input)
+      return Switch.logger.error "Cannot find file #{input}" unless file
+
       file.export_as_file(output)
 
       Switch.logger.info "Downloaded file #{input} from google drive to #{output}"
