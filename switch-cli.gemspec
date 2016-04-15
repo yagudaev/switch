@@ -1,30 +1,40 @@
 Gem::Specification.new do |s|
   s.name        = 'switch-cli'
-  s.version     = '0.0.2'
+  s.version     = '0.0.3'
   s.executables << 'switch'
   s.date        = '2016-01-02'
   s.summary     = "Command-line utility to convert translation files to spreadsheet and vice-versa"
-  s.description = "Your application likely consumes .json or .yml files, editing then by hand
-  as a developer is fine. If you are a translator/client without programming background editing
-  these files is difficult. Moreover, when you get more than 5 languages it is hard to keep track
-  what translations are still pending.
+  s.description = "Switch helps you add multiple languages to your site by leveraging the power of google spreadsheets. It is a commandline tool providing you with an easy way to automate the process and avoid common mistakes.
 
-  What you really want is a simple spreadsheet you can all collaberate on.
-  With a simple command you can make it all come true:
+  The most common use case of switch is for switching between a locale representation in JSON/YAML to a CSV (spreadsheet) based one and vice-versa.
+
+  # Install
 
   ```
-  switch json2csv ./locales ./tmp --google-drive
+  gem install switch-cli
   ```
 
-  This will take all the json files in the locale directory and convert them
-  to a single csv file under ./tmp/locales.csv it will then upload the file
-  to google drive and open it
+  # Usage
+
+  ```
+  switch json2csv [input-dir] [output-file]
+  ```
+
+  Converts multiple json files to be a single csv file with columns for each file, with the file name as the column header.
+
+  If you do not specify an input-dir it will be taken as ./locales and output-file would be the direcotry name + .csv.
+
+  ```
+  switch csv2json [input-file] [output-dir]
+  ```
+
+  Converts a single csv file into multiple json files, with a file for each column using the key and order columns to construct the files.
   "
   s.authors     = ["Michael Yagudaev"]
   s.email       = 'michael@yagudaev.com'
   s.files       = ["lib/switch.rb", "lib/switch/cloud_sync.rb", "lib/switch/csv2json.rb",
     "lib/switch/extensions.rb", "lib/switch/json2csv.rb"]
-  s.homepage    = 'http://rubygems.org/gems/switch'
+  s.homepage    = 'https://github.com/yagudaev/switch'
   s.license     = 'MIT'
 
   # run time
