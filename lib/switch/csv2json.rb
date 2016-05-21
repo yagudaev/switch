@@ -1,4 +1,3 @@
-require 'pry'
 module Switch
   class Csv2Json
     def initialize(input, output)
