@@ -1,8 +1,8 @@
 Gem::Specification.new do |s|
   s.name        = 'switch-cli'
-  s.version     = '0.0.4'
+  s.version     = '0.0.5'
   s.executables << 'switch'
-  s.date        = '2016-01-02'
+  s.date        = '2016-05-20'
   s.summary     = "Command-line utility to convert translation files to spreadsheet and vice-versa"
   s.description = "Switch helps you add multiple languages to your site by leveraging the power of google spreadsheets. It is a commandline tool providing you with an easy way to automate the process and avoid common mistakes.
 
