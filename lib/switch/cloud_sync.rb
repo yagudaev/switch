@@ -24,7 +24,7 @@ module Switch
       file = @session.spreadsheet_by_title(input) || @session.spreadsheet_by_key(input)
       return Switch.logger.error "Cannot find file #{input}" unless file
 
-      file.export_as_file(output)
+      file.export_as_file(output, 'csv')
 
       Switch.logger.info "Downloaded file #{input} from google drive to #{output}"
     end
