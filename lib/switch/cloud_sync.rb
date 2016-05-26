@@ -21,7 +21,7 @@ module Switch
     end
 
     def download_from_drive(input, output)
-      file = @session.spreadsheet_by_title(input)
+      file = @session.spreadsheet_by_title(input) || @session.spreadsheet_by_key(input)
       return Switch.logger.error "Cannot find file #{input}" unless file
 
       file.export_as_file(output)
