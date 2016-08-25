@@ -7,7 +7,7 @@ module Switch
 
     def upload_to_drive(input, output)
       Switch.logger.info "Uploading csv for json files"
-      if file = @session.spreadsheet_by_title(output)
+      if file = @session.spreadsheet_by_title(output) || @session.spreadsheet_by_key(output)
         Switch.logger.info "Detected old version of #{output}, updating file!"
         file.update_from_file(input)
       else
